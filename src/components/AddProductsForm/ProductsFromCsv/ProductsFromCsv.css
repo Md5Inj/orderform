@@ -1,0 +1,33 @@
+#fileUpload {
+  width: .1px;
+  height: .1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+#fileUpload + label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  height: 80px;
+  border: 1px dashed #ccc;
+  border-radius: 1px;
+  color: #4776f0;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  transition: .5s all;
+}
+
+#fileUpload:focus + label,
+#fileUpload + label:hover {
+  cursor: pointer;
+  border-color: #1541b3;
+}
+
+.addFromFile > .inputLabel {
+  display: block;
+}

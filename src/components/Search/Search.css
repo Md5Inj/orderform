@@ -1,0 +1,7 @@
+.productSearch > .productSearchInput {
+  transition: .5s all;
+}
+
+.productSearch > .productSearchInput:focus {
+  border: 1px solid rgb(51 153 255);
+}

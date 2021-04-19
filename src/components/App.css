@@ -1,0 +1,8 @@
+.productsManage {
+  display: flex;
+  flex-direction: row;
+}
+
+.pageTitle {
+  margin-bottom: 1.5%;
+}

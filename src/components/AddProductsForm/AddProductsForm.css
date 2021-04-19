@@ -1,0 +1,11 @@
+.addProductsForm {
+  box-shadow: 0 6px 25px rgb(218 225 241 / 50%);
+  padding: 2% 3% 3% 3%;
+  margin-top: 1%;
+}
+
+.productFormButtonWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}

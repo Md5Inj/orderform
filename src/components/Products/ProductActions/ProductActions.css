@@ -1,0 +1,9 @@
+.productActions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.productActions > button {
+  margin-left: 2%;
+}
