@@ -1,7 +1,7 @@
 class Storage {
     static setItem(key, value) {
         localStorage.setItem(key, JSON.stringify(value));
-        window.dispatchEvent( new Event('storage'));
+        window.dispatchEvent( new Event('productsOperation'));
     }
 
     static getItem(key) {

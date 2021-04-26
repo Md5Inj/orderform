@@ -1,4 +1,4 @@
-.productList {
+.orderForm .productList {
   box-shadow: 0 6px 25px rgb(218 225 241 / 50%);
   margin-bottom: 3%;
   min-height: 50%;
@@ -7,37 +7,122 @@
   justify-content: space-between;
 }
 
-.productList > .noProducts {
+.orderForm .productList > .noProducts {
   padding: 10%;
   text-align: center;
 }
 
-.productListWrapper {
+.orderForm .productListWrapper {
   min-width: 69%;
   padding: 1%;
+  padding-left: 0;
   margin-right: 1%;
 }
 
-.productList > .total > span {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.4rem;
-}
-
-.productList > .total {
-  padding: 5px 5px;
-  border-top: 1px solid #bebebe;
-  text-align: right;
-}
-
-.productList > .total > span.comment {
-  font-size: 1rem;
-}
-
-.productDelete {
+.orderForm .productDelete {
   cursor: pointer;
   user-select: none;
 }
 
-.productDelete:hover {
+.orderForm .productDelete:hover {
   color: #4776f0;
+}
+
+.orderForm .qty {
+  background-color: transparent;
+  color: #7d7d7d !important;
+  transition: .5s all;
+  display: inline-grid;
+  align-items: center;
+  border: none;
+  box-shadow: none !important;
+}
+
+.orderForm .qty::before {
+  font-size: 25px;
+  line-height: 0;
+}
+
+.orderForm .qtyInput {
+  transition: .2s all;
+}
+
+.orderForm .qtyInput:focus {
+  box-shadow: none !important;
+  border-color: #4776f0;
+}
+
+.orderForm .minus::before {
+  content: '-';
+  transform: translateY(-2px) scaleX(1.8);
+}
+
+.orderForm .plus::before {
+  content: '+';
+}
+
+.orderForm .minus+input {
+  width: 60px;
+  height: 36px;
+}
+
+.orderForm .qty:hover {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.orderForm .qty:hover:before {
+  color: #4776f0;
+}
+
+.orderForm .qty:focus {
+  line-height: 19.92px;
+  background-color: transparent;
+  color: #4776f0 !important;
+  display: inline-grid;
+  border: none;
+}
+
+.productListWrapper .tbody .productError {
+  background-color: #fce4e4;
+  border: 1px solid #fcc2c3;
+  padding: .6%;
+  width: 100%;
+  grid-column: 1/-1;
+  margin: 1% 1% 0 0;
+  position: relative;
+  border-radius: 3px;
+}
+
+.productListWrapper .tbody .productError > .close {
+  float: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -10px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #666666;
+  text-shadow: 0 1px 0 #fff;
+  text-decoration: none;
+}
+
+.example-enter {
+    opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+    opacity: 1;
+}
+
+.example-leave.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
 }

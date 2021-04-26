@@ -1,7 +1,7 @@
 var config = {
     map: {
         '*': {
-            'react': 'Freento_OrderForm/js/index_bundle'
+            'orderForm': 'Freento_OrderForm/js/index_bundle'
         }
     },
 };

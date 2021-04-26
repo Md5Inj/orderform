@@ -13,13 +13,12 @@ class AddProductsForm extends React.Component {
         return (
             <div className="addProductsForm">
                 <ProductsFromSku
-                    loadFilesFromCsvUrl={this.props.config.loadFilesFromCsvUrl}
-                    formKey={this.props.config.formKey}
+                    graphqlUrl={this.props.config.graphqlUrl}
                 />
                 <ProductsFromCsv
-                    loadFilesFromCsvUrl={this.props.config.loadFilesFromCsvUrl}
                     readFileUrl={this.props.config.readFileUrl}
                     formKey={this.props.config.formKey}
+                    graphqlUrl={this.props.config.graphqlUrl}
                 />
             </div>
         )

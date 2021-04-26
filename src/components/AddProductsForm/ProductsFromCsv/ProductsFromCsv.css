@@ -25,7 +25,7 @@
 #fileUpload:focus + label,
 #fileUpload + label:hover {
   cursor: pointer;
-  border-color: #1541b3;
+  border-color: #4776f0;
 }
 
 .addFromFile > .inputLabel {

@@ -32,7 +32,7 @@ class Read extends Action
     /**
      * @return Json
      */
-    public function execute()
+    public function execute(): Json
     {
         $resultJson = $this->resultJsonFactory->create();
         $file = $this->getRequest()->getFiles()->toArray();

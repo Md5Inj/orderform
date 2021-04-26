@@ -1,0 +1,14 @@
+.productList > .total > span {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+}
+
+.productList > .total {
+    padding: 1% 1% 1% 1%;
+    border-top: 1px solid #e5e5e6;
+    text-align: right;
+}
+
+.productList > .total > span.comment {
+    font-size: 1rem;
+}

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Totals.css';
+
 class Totals extends React.Component {
     constructor(props) {
         super(props);

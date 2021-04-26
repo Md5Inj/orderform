@@ -1,133 +1,88 @@
 import React from 'react';
-import ReactModal from 'react-modal';
 import Papa from 'papaparse';
-
-import Modal from "../../Modal/Modal";
-import ProductStorage from "../../ProductStorage";
+import Storage from "../../Storage";
+import Loader from "../../Loader/Loader";
+import Notifications, {notify} from 'react-notify-toast';
 
 import './ProductsFromSku.css';
-import Grid from "../../Grid/Grid";
 
 class ProductsFromSku extends React.Component {
     constructor(props) {
         super(props);
 
-        this.tableHeaders = [
-            {
-                title: "Item №",
-                class: "item-number-head"
-            },
-            {
-                title: "SKU",
-                class: "sku-head"
-            },
-            {
-                title: "Reason",
-                class: "action-head"
-            }
-        ];
-
-        this.modalButtons = [
-            {
-                text: 'Accept',
-                class: 'btnOk',
-                action: this.acceptAction
-            },
-            {
-                text: 'Cancel',
-                class: 'btnCancel',
-                action: this.cancelAction
-            }
-        ];
-
         this.state = {
-            showModal: false,
-            skuTextareaText: "",
-            modalContent: "",
-            modalButtons: ""
+            isLoading: false,
+            skuTextareaText: ""
         }
     }
 
-    cancelAction = () => {
-        this.handleCloseModal();
-    }
-
-    acceptAction = () => {
-        this.state.response.items.forEach(product => {
-            ProductStorage.addProduct(product);
-        });
-
-        this.handleCloseModal();
-    }
-
-    handleOpenModal = (params) => {
-        let tableData = [];
-        this.setState({
-            response: params
-        })
-
-        Object.entries(params.errors).map(function(error, index) {
-            tableData.push(
-                <tr key={index+1}>
-                    <td>{index+1}</td>
-                    <td>{error[0]}</td>
-                    <td className="errorMessage">{error[1]}</td>
-                </tr>
-            );
-        });
-
-        let modalContent =
-            <div>
-                <div className="modalTitle">
-                    <p>{params.total - Object.entries(params.errors).length} out of {Object.entries(params.errors).length} </p>
-                    <p>successfully passed validation</p>
-                    <span>Items below will not be added to the grid because:</span>
-                </div>
-                <Grid
-                    tableHeaders={this.tableHeaders}
-                    tableData={tableData}
-                />
-            </div>
-
-        let buttons = this.modalButtons.map(button => {
-            return (
-                <button className={button.class} onClick={button.action}>{button.text}</button>
-            )
-        });
-
-        this.setState({
-            showModal: true,
-            modalContent: modalContent,
-            tableData: tableData,
-            modalButtons: buttons
-        });
-    }
-
-    handleCloseModal = () => {
-        this.setState({showModal: false});
-    }
-
     loadProducts = () => {
-        let formData = new FormData();
+        if (this.state.skuTextareaText === "") {
+            notify.show("You should input multiple SKUs", "error");
+            return;
+        }
+
+        this.setState({
+            isLoading: true
+        });
         Papa.parse(this.state.skuTextareaText, {
             complete: (result) => {
-                formData.append("products", JSON.stringify(result.data));
-                formData.append("form_key", this.props.formKey)
+                let cartId = Storage.getItem("cartId");
+                let data = ` 
+                    mutation {
+                        addSimpleProductsToCart(
+                            input: {
+                                cart_id: "${cartId}"
+                                cart_items: [
+                                `;
 
-                fetch(this.props.loadFilesFromCsvUrl, {
+                result.data.forEach((product) => {
+                    data += `
+                        {
+                            data: {
+                                quantity: ${product[1]}
+                                sku: "${product[0]}"
+                            }
+                        }`;
+                });
+
+                data += ` ]
+                        }
+                    ) {
+                        cart {
+                            items {
+                                id
+                                product {
+                                    name
+                                    sku
+                                }    
+                                quantity
+                            }
+                        }
+                    }
+                }`;
+
+                fetch(this.props.graphqlUrl, {
                     method: "POST",
-                    body: formData
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        query: data
+                    })
                 })
                     .then(response => response.json())
                     .then((response) => {
-                        if (response.errors.length === 0 && response.items.length !== 0) {
-                            response.items.forEach(product => {
-                                ProductStorage.addProduct(product);
-                            });
-                        } else {
-                            this.handleOpenModal(response);
+                        if (response.errors !== undefined && response.errors.length !== 0) {
+                            response.errors.forEach(error => {
+                                notify.show(error.message, 'error');
+                            })
                         }
-                    })
+                        window.dispatchEvent(new Event('productsOperation'));
+                        this.setState({
+                            isLoading: false
+                        })
+                    });
             }
         });
     }
@@ -148,13 +103,10 @@ class ProductsFromSku extends React.Component {
                 <span className="comment">Example: WT08,5</span>
                 <div className="productFormButtonWrapper">
                     <button className="addToList" onClick={this.loadProducts}>Add to List</button>
-                    {this.state.showModal ?
-                        <Modal
-                            content={this.state.modalContent}
-                            buttons={this.state.modalButtons}
-                            handleCloseModal={this.handleCloseModal}
-                        /> : null}
+                    {this.state.isLoading &&
+                    <Loader/>}
                 </div>
+                <Notifications/>
             </div>
         )
     }

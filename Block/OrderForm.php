@@ -44,26 +44,31 @@ class OrderForm extends Template
     /**
      * Return js config
      *
-     * @return false|string
+     * @return string
      */
-    public function getJsConfig() {
+    public function getJsConfig(): string
+    {
         $params = [
-            'loadFilesFromCsvUrl' => $this->getLoadFilesFromCsvUrl(),
-            'readFileUrl' => $this->getReadFileUrl(),
-            'formKey' => $this->getFormKey(),
-            'currencySymbol' => $this->getCurrentCurrencySymbol(),
-            'graphqlUrl' => $this->getGraphqlUrl()
+            'readFileUrl'              => $this->getReadFileUrl(),
+            'formKey'                  => $this->getFormKey(),
+            'currencySymbol'           => $this->getCurrentCurrencySymbol(),
+            'graphqlUrl'               => $this->getGraphqlUrl(),
+            'getCartIdUrl'             => $this->getCartIdUrl(),
+            'getAddToCartUrl'          => $this->getAddToCartUrl(),
+            'getCartIdFromMaskedIdUrl' => $this->getCartIdFromMaskedIdUrl(),
+            'clearCartUrl'             => $this->getClearCartUrl(),
+            'loaderUrl'                => $this->getLoaderUrl()
         ];
 
         return json_encode($params);
     }
 
-    public function getLoadFilesFromCsvUrl()
-    {
-        return $this->getUrl('orderform/products/loadfromcsv');
-    }
-
-    public function getFormKey()
+    /**
+     * Return formKey
+     *
+     * @return string
+     */
+    public function getFormKey(): string
     {
         return $this->formKey->getFormKey();
     }
@@ -73,7 +78,7 @@ class OrderForm extends Template
      *
      * @return string
      */
-    public function getCurrentCurrencySymbol()
+    public function getCurrentCurrencySymbol(): string
     {
         return $this->currency->getCurrencySymbol();
     }
@@ -88,8 +93,63 @@ class OrderForm extends Template
         return $this->getUrl('orderform/file/read');
     }
 
+    /**
+     * Return graphql URL
+     *
+     * @return string
+     */
     public function getGraphqlUrl(): string
     {
         return $this->getUrl('graphql');
+    }
+
+    /**
+     * Return get cart id URL
+     *
+     * @return string
+     */
+    public function getCartIdUrl(): string
+    {
+        return $this->getUrl('rest/V1/guest-carts');
+    }
+
+    /**
+     * Return add to cart url
+     *
+     * @return string
+     */
+    public function getAddToCartUrl(): string
+    {
+        return $this->getUrl('orderform/cart/add');
+    }
+
+    /**
+     * Return cart id from masked url
+     *
+     * @return string
+     */
+    public function getCartIdFromMaskedIdUrl(): string
+    {
+        return $this->getUrl('rest/V1/guest-carts/:cartId');
+    }
+
+    /**
+     * Return clear cart URL
+     *
+     * @return string
+     */
+    public function getClearCartUrl(): string
+    {
+        return $this->getUrl('orderform/cart/clear');
+    }
+
+    /**
+     * Return loader image url
+     *
+     * @return string
+     */
+    public function getLoaderUrl(): string
+    {
+        return $this->getViewFileUrl("Freento_OrderForm::images/1487.gif");
     }
 }

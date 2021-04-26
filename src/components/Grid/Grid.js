@@ -10,18 +10,18 @@ class Grid extends React.Component {
     render() {
         return (
             <div className="productGridWrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            {this.props.tableHeaders.map((thead) => {
-                                return (<th className={thead.class}>{thead.title}</th>)
+                <div className="table">
+                    <div className="thead">
+                        <div className="tr">
+                            {this.props.tableHeaders.map((thead, key) => {
+                                return (<div className={"th " + thead.class} key={key}>{thead.title}</div>)
                             })}
-                        </tr>
-                    </thead>
-                    <tbody>
+                        </div>
+                    </div>
+                    <div className="tbody">
                         {this.props.tableData}
-                    </tbody>
-                </table>
+                    </div>
+                </div>
             </div>
         )
     }

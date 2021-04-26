@@ -8,6 +8,7 @@ use Magento\Catalog\Api\ProductRepositoryInterface;
 use Magento\ConfigurableProduct\Model\Product\Type\Configurable;
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\App\Action\Action;
+use Magento\Framework\Controller\Result\Json;
 use Magento\Framework\Controller\Result\JsonFactory;
 use Magento\Framework\Exception\NoSuchEntityException;
 
@@ -39,7 +40,13 @@ class LoadFromCsv extends Action
         parent::__construct($context);
     }
 
-    public function processProducts($products)
+    /**
+     * Process products
+     *
+     * @param $products
+     * @return array
+     */
+    public function processProducts($products): array
     {
         $result = [
             'errors' => [],
@@ -82,9 +89,9 @@ class LoadFromCsv extends Action
     }
 
     /**
-     * @return \Magento\Framework\App\ResponseInterface|\Magento\Framework\Controller\Result\Json|\Magento\Framework\Controller\ResultInterface
+     * @return Json
      */
-    public function execute()
+    public function execute(): Json
     {
         $resultJson = $this->resultJsonFactory->create();
         $products = $this->getRequest()->getParam('products');

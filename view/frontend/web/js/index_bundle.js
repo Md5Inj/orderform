@@ -110,7 +110,7 @@ exports.push([module.i, ".addProductsForm {\n  box-shadow: 0 6px 25px rgb(218 22
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "#fileUpload {\n  width: .1px;\n  height: .1px;\n  opacity: 0;\n  overflow: hidden;\n  position: absolute;\n  z-index: -1;\n}\n\n#fileUpload + label {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-wrap: wrap;\n  position: relative;\n  height: 80px;\n  border: 1px dashed #ccc;\n  border-radius: 1px;\n  color: #4776f0;\n  font-size: 12px !important;\n  font-weight: 400 !important;\n  transition: .5s all;\n}\n\n#fileUpload:focus + label,\n#fileUpload + label:hover {\n  cursor: pointer;\n  border-color: #1541b3;\n}\n\n.addFromFile > .inputLabel {\n  display: block;\n}\n", ""]);
+exports.push([module.i, "#fileUpload {\n  width: .1px;\n  height: .1px;\n  opacity: 0;\n  overflow: hidden;\n  position: absolute;\n  z-index: -1;\n}\n\n#fileUpload + label {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-wrap: wrap;\n  position: relative;\n  height: 80px;\n  border: 1px dashed #ccc;\n  border-radius: 1px;\n  color: #4776f0;\n  font-size: 12px !important;\n  font-weight: 400 !important;\n  transition: .5s all;\n}\n\n#fileUpload:focus + label,\n#fileUpload + label:hover {\n  cursor: pointer;\n  border-color: #4776f0;\n}\n\n.addFromFile > .inputLabel {\n  display: block;\n}\n", ""]);
 
 
 
@@ -140,7 +140,7 @@ exports.push([module.i, ".multipleProducts > h1 {\n  color: #333;\n  font-family
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".productsManage {\n  display: flex;\n  flex-direction: row;\n}\n\n.pageTitle {\n  margin-bottom: 1.5%;\n}\n", ""]);
+exports.push([module.i, ".orderForm .productsManage {\n  display: flex;\n  flex-direction: row;\n}\n\n.orderForm .pageTitle {\n  margin-bottom: 1.5%;\n}\n\n.orderForm button:not(.qty) {\n  box-shadow: none;\n  border-radius: 3px;\n  font-weight: 400;\n  transition: .2s all;\n  font-size: 1.5rem;\n  background-color: white;\n  color: #4776f0d1;\n  height: 38px;\n}\n\n.orderForm button:not(.qty):hover {\n  background-color: #4776f0;\n  color: white;\n  border-color: #4776f0;\n}", ""]);
 
 
 
@@ -155,22 +155,22 @@ exports.push([module.i, ".productsManage {\n  display: flex;\n  flex-direction: 
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".productGridWrapper th {\n  font-family: \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  font-size-adjust: none;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 20px;\n  text-align: left;\n  text-size-adjust: 100%;\n}\n\n.productGridWrapper thead {\n  border-bottom: 1px solid #e5e5e6;\n}\n\n.qty {\n  background-color: transparent;\n  color: black !important;\n  transition: .5s all;\n  display: inline-grid;\n  align-items: center;\n}\n\n.qty::before {\n  font-size: 24px;\n  line-height: 0;\n}\n\n.minus::before {\n  content: '-';\n}\n\n.plus::before {\n  content: '+';\n}\n\n.minus+input {\n  width: 60px;\n  height: 36px;\n}\n\n.qty:hover {\n  background-color: transparent;\n}\n\n.qty:hover:before {\n  color: #4776f0;\n}\n\n.productGridWrapper > table > tbody > tr > td {\n  vertical-align: initial;\n}\n\n.qty:focus {\n  padding: 0 20px;\n  height: 44px;\n  line-height: 19.92px;\n  background-color: transparent;\n  color: #4776f0 !important;\n  display: inline-grid;\n}\n", ""]);
+exports.push([module.i, ".productGridWrapper th {\n  font-family: \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  font-size-adjust: none;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 20px;\n  text-align: left;\n  text-size-adjust: 100%;\n}\n\n.productGridWrapper .thead {\n  border-bottom: 1px solid #e5e5e6;\n}\n\n.productGridWrapper > table > tbody > tr > td {\n  vertical-align: initial;\n}\n\n.productGridWrapper thead > tr > th:first-child, .productGridWrapper tbody > tr > td:first-child {\n  padding-left: 4%;\n}\n\n.productGridWrapper .thead > .tr  {\n  display: grid;\n  grid-template-columns: repeat(3, 33%);\n  padding: 35px 15px 20px;\n}\n\n.productGridWrapper .tbody > .tr {\n  display: grid;\n  grid-template-columns: repeat(3, 33%);\n  align-items: center;\n  margin-bottom: 2%;\n}\n\n.productGridWrapper .tbody {\n  padding: 15px;\n}", ""]);
 
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/Modal/Modal.css":
-/*!******************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/Modal/Modal.css ***!
-  \******************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/Loader/Loader.css":
+/*!********************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/Loader/Loader.css ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".modalWindow {\n  position: fixed; /* Stay in place */\n  z-index: 1; /* Sit on top */\n  padding-top: 10%; /* Location of the box */\n  left: 0;\n  top: 0;\n  width: 100%; /* Full width */\n  height: 100%; /* Full height */\n  overflow: auto; /* Enable scroll if needed */\n  background-color: rgb(0,0,0); /* Fallback color */\n  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\n}\n\n.modalContent {\n  background-color: #fefefe;\n  margin: auto;\n  padding: 20px;\n  border: 1px solid #888;\n  width: 30%;\n  text-align: center;\n}\n\n.modalContent > .close {\n  color: #aaaaaa;\n  float: right;\n  font-size: 28px;\n  font-weight: bold;\n}\n\n.modalContent th {\n  width: 33%;\n}\n\n.modalContent td {\n  width: 33%;\n  text-align: left;\n}\n\n.modalTitle {\n  margin-bottom: 6%;\n}\n\n.modalTitle > p {\n  font-weight: bold;\n  font-size: 2.4rem;\n}\n\n.modalTitle > span {\n  font-size: 1.4rem;\n}\n\n.actions {\n  margin-top: 5%;\n}\n\n.actions > button {\n  margin-right: 5%;\n  width: 30%;\n}\n", ""]);
+exports.push([module.i, ".loaderImage {\n    position: relative;\n    width: 150px;\n    height: 150px;\n    animation: rotate 2s linear infinite;\n}\n\n.loaderImage circle {\n    width: 100%;\n    height: 100%;\n    fill: none;\n    stroke-width: 10;\n    stroke: #00a1ff;\n    transform: translate(5px, 5px);\n    stroke-linecap: round;\n    stroke-dasharray: 440;\n    stroke-dashoffset: 440;\n    animation: animate 2s linear infinite;\n}\n\n@keyframes animate {\n    0%, 100% {\n        stroke-dashoffset: 440;\n    }\n\n    50% {\n        stroke-dashoffset: 0;\n    }\n\n    50.1% {\n        stroke-dashoffset: 880;\n    }\n}\n\n.loader {\n    position: fixed;\n    z-index: 999;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    overflow: auto;\n    background-color: rgb(0,0,0);\n    background-color: rgba(0,0,0,0.4);\n    padding-top: 20%;\n    padding-left: 40%;\n}", ""]);
 
 
 
@@ -200,7 +200,7 @@ exports.push([module.i, ".productActions {\n  display: flex;\n  flex-direction: 
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".productList {\n  box-shadow: 0 6px 25px rgb(218 225 241 / 50%);\n  margin-bottom: 3%;\n  min-height: 50%;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n\n.productList > .noProducts {\n  padding: 10%;\n  text-align: center;\n}\n\n.productListWrapper {\n  min-width: 69%;\n  padding: 1%;\n  margin-right: 1%;\n}\n\n.productList > .total > span {\n  font-family: \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 1.4rem;\n}\n\n.productList > .total {\n  padding: 5px 5px;\n  border-top: 1px solid #bebebe;\n  text-align: right;\n}\n\n.productList > .total > span.comment {\n  font-size: 1rem;\n}\n\n.productDelete {\n  cursor: pointer;\n  user-select: none;\n}\n\n.productDelete:hover {\n  color: #4776f0;\n}\n", ""]);
+exports.push([module.i, ".orderForm .productList {\n  box-shadow: 0 6px 25px rgb(218 225 241 / 50%);\n  margin-bottom: 3%;\n  min-height: 50%;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n\n.orderForm .productList > .noProducts {\n  padding: 10%;\n  text-align: center;\n}\n\n.orderForm .productListWrapper {\n  min-width: 69%;\n  padding: 1%;\n  padding-left: 0;\n  margin-right: 1%;\n}\n\n.orderForm .productDelete {\n  cursor: pointer;\n  user-select: none;\n}\n\n.orderForm .productDelete:hover {\n  color: #4776f0;\n}\n\n.orderForm .qty {\n  background-color: transparent;\n  color: #7d7d7d !important;\n  transition: .5s all;\n  display: inline-grid;\n  align-items: center;\n  border: none;\n  box-shadow: none !important;\n}\n\n.orderForm .qty::before {\n  font-size: 25px;\n  line-height: 0;\n}\n\n.orderForm .qtyInput {\n  transition: .2s all;\n}\n\n.orderForm .qtyInput:focus {\n  box-shadow: none !important;\n  border-color: #4776f0;\n}\n\n.orderForm .minus::before {\n  content: '-';\n  transform: translateY(-2px) scaleX(1.8);\n}\n\n.orderForm .plus::before {\n  content: '+';\n}\n\n.orderForm .minus+input {\n  width: 60px;\n  height: 36px;\n}\n\n.orderForm .qty:hover {\n  background-color: transparent;\n  border: none;\n  box-shadow: none;\n}\n\n.orderForm .qty:hover:before {\n  color: #4776f0;\n}\n\n.orderForm .qty:focus {\n  line-height: 19.92px;\n  background-color: transparent;\n  color: #4776f0 !important;\n  display: inline-grid;\n  border: none;\n}\n\n.productListWrapper .tbody .productError {\n  background-color: #fce4e4;\n  border: 1px solid #fcc2c3;\n  padding: .6%;\n  width: 100%;\n  grid-column: 1/-1;\n  margin: 1% 1% 0 0;\n  position: relative;\n  border-radius: 3px;\n}\n\n.productListWrapper .tbody .productError > .close {\n  float: none;\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  margin-top: -10px;\n  font-size: 21px;\n  font-weight: 700;\n  line-height: 1;\n  color: #666666;\n  text-shadow: 0 1px 0 #fff;\n  text-decoration: none;\n}\n\n.example-enter {\n    opacity: 0.01;\n}\n\n.example-enter.example-enter-active {\n    opacity: 1;\n    transition: opacity 500ms ease-in;\n}\n\n.example-leave {\n    opacity: 1;\n}\n\n.example-leave.example-leave-active {\n    opacity: 0.01;\n    transition: opacity 300ms ease-in;\n}", ""]);
 
 
 
@@ -215,7 +215,22 @@ exports.push([module.i, ".productList {\n  box-shadow: 0 6px 25px rgb(218 225 24
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".productSearch > .productSearchInput {\n  transition: .5s all;\n}\n\n.productSearch > .productSearchInput:focus {\n  border: 1px solid rgb(51 153 255);\n}\n", ""]);
+exports.push([module.i, ".productSearch > .productSearchInput {\n  transition: .5s all;\n}\n\n.productSearch > .productSearchInput:focus {\n  border: 1px solid rgb(51 153 255);\n  box-shadow: none;\n  background-color: white;\n}\n\n.productSearch > .productSearchInput {\n  padding: 1.4%;\n}", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/Totals/Totals.css":
+/*!********************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/Totals/Totals.css ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".productList > .total > span {\n    font-family: \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-size: 1.4rem;\n}\n\n.productList > .total {\n    padding: 1% 1% 1% 1%;\n    border-top: 1px solid #e5e5e6;\n    text-align: right;\n}\n\n.productList > .total > span.comment {\n    font-size: 1rem;\n}", ""]);
 
 
 
@@ -314,54 +329,6 @@ function toComment(sourceMap) {
   var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
   return '/*# ' + data + ' */';
 }
-
-/***/ }),
-
-/***/ "./node_modules/exenv/index.js":
-/*!*************************************!*\
-  !*** ./node_modules/exenv/index.js ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_RESULT__;/*!
-  Copyright (c) 2015 Jed Watson.
-  Based on code that is Copyright 2013-2015, Facebook, Inc.
-  All rights reserved.
-*/
-/* global define */
-
-(function () {
-	'use strict';
-
-	var canUseDOM = !!(
-		typeof window !== 'undefined' &&
-		window.document &&
-		window.document.createElement
-	);
-
-	var ExecutionEnvironment = {
-
-		canUseDOM: canUseDOM,
-
-		canUseWorkers: typeof Worker !== 'undefined',
-
-		canUseEventListeners:
-			canUseDOM && !!(window.addEventListener || window.attachEvent),
-
-		canUseViewport: canUseDOM && !!window.screen
-
-	};
-
-	if (true) {
-		!(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
-			return ExecutionEnvironment;
-		}).call(exports, __webpack_require__, exports, module),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else {}
-
-}());
-
 
 /***/ }),
 
@@ -26533,1294 +26500,9 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js ***!
-  \****************************************************************************/
-/*! exports provided: polyfill */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "polyfill", function() { return polyfill; });
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-function componentWillMount() {
-  // Call this.constructor.gDSFP to support sub-classes.
-  var state = this.constructor.getDerivedStateFromProps(this.props, this.state);
-  if (state !== null && state !== undefined) {
-    this.setState(state);
-  }
-}
-
-function componentWillReceiveProps(nextProps) {
-  // Call this.constructor.gDSFP to support sub-classes.
-  // Use the setState() updater to ensure state isn't stale in certain edge cases.
-  function updater(prevState) {
-    var state = this.constructor.getDerivedStateFromProps(nextProps, prevState);
-    return state !== null && state !== undefined ? state : null;
-  }
-  // Binding "this" is important for shallow renderer support.
-  this.setState(updater.bind(this));
-}
-
-function componentWillUpdate(nextProps, nextState) {
-  try {
-    var prevProps = this.props;
-    var prevState = this.state;
-    this.props = nextProps;
-    this.state = nextState;
-    this.__reactInternalSnapshotFlag = true;
-    this.__reactInternalSnapshot = this.getSnapshotBeforeUpdate(
-      prevProps,
-      prevState
-    );
-  } finally {
-    this.props = prevProps;
-    this.state = prevState;
-  }
-}
-
-// React may warn about cWM/cWRP/cWU methods being deprecated.
-// Add a flag to suppress these warnings for this special case.
-componentWillMount.__suppressDeprecationWarning = true;
-componentWillReceiveProps.__suppressDeprecationWarning = true;
-componentWillUpdate.__suppressDeprecationWarning = true;
-
-function polyfill(Component) {
-  var prototype = Component.prototype;
-
-  if (!prototype || !prototype.isReactComponent) {
-    throw new Error('Can only polyfill class components');
-  }
-
-  if (
-    typeof Component.getDerivedStateFromProps !== 'function' &&
-    typeof prototype.getSnapshotBeforeUpdate !== 'function'
-  ) {
-    return Component;
-  }
-
-  // If new component APIs are defined, "unsafe" lifecycles won't be called.
-  // Error if any of these lifecycles are present,
-  // Because they would work differently between older and newer (16.3+) versions of React.
-  var foundWillMountName = null;
-  var foundWillReceivePropsName = null;
-  var foundWillUpdateName = null;
-  if (typeof prototype.componentWillMount === 'function') {
-    foundWillMountName = 'componentWillMount';
-  } else if (typeof prototype.UNSAFE_componentWillMount === 'function') {
-    foundWillMountName = 'UNSAFE_componentWillMount';
-  }
-  if (typeof prototype.componentWillReceiveProps === 'function') {
-    foundWillReceivePropsName = 'componentWillReceiveProps';
-  } else if (typeof prototype.UNSAFE_componentWillReceiveProps === 'function') {
-    foundWillReceivePropsName = 'UNSAFE_componentWillReceiveProps';
-  }
-  if (typeof prototype.componentWillUpdate === 'function') {
-    foundWillUpdateName = 'componentWillUpdate';
-  } else if (typeof prototype.UNSAFE_componentWillUpdate === 'function') {
-    foundWillUpdateName = 'UNSAFE_componentWillUpdate';
-  }
-  if (
-    foundWillMountName !== null ||
-    foundWillReceivePropsName !== null ||
-    foundWillUpdateName !== null
-  ) {
-    var componentName = Component.displayName || Component.name;
-    var newApiName =
-      typeof Component.getDerivedStateFromProps === 'function'
-        ? 'getDerivedStateFromProps()'
-        : 'getSnapshotBeforeUpdate()';
-
-    throw Error(
-      'Unsafe legacy lifecycles will not be called for components using new component APIs.\n\n' +
-        componentName +
-        ' uses ' +
-        newApiName +
-        ' but also contains the following legacy lifecycles:' +
-        (foundWillMountName !== null ? '\n  ' + foundWillMountName : '') +
-        (foundWillReceivePropsName !== null
-          ? '\n  ' + foundWillReceivePropsName
-          : '') +
-        (foundWillUpdateName !== null ? '\n  ' + foundWillUpdateName : '') +
-        '\n\nThe above lifecycles should be removed. Learn more about this warning here:\n' +
-        'https://fb.me/react-async-component-lifecycle-hooks'
-    );
-  }
-
-  // React <= 16.2 does not support static getDerivedStateFromProps.
-  // As a workaround, use cWM and cWRP to invoke the new static lifecycle.
-  // Newer versions of React will ignore these lifecycles if gDSFP exists.
-  if (typeof Component.getDerivedStateFromProps === 'function') {
-    prototype.componentWillMount = componentWillMount;
-    prototype.componentWillReceiveProps = componentWillReceiveProps;
-  }
-
-  // React <= 16.2 does not support getSnapshotBeforeUpdate.
-  // As a workaround, use cWU to invoke the new lifecycle.
-  // Newer versions of React will ignore that lifecycle if gSBU exists.
-  if (typeof prototype.getSnapshotBeforeUpdate === 'function') {
-    if (typeof prototype.componentDidUpdate !== 'function') {
-      throw new Error(
-        'Cannot polyfill getSnapshotBeforeUpdate() for components that do not define componentDidUpdate() on the prototype'
-      );
-    }
-
-    prototype.componentWillUpdate = componentWillUpdate;
-
-    var componentDidUpdate = prototype.componentDidUpdate;
-
-    prototype.componentDidUpdate = function componentDidUpdatePolyfill(
-      prevProps,
-      prevState,
-      maybeSnapshot
-    ) {
-      // 16.3+ will not execute our will-update method;
-      // It will pass a snapshot value to did-update though.
-      // Older versions will require our polyfilled will-update value.
-      // We need to handle both cases, but can't just check for the presence of "maybeSnapshot",
-      // Because for <= 15.x versions this might be a "prevContext" object.
-      // We also can't just check "__reactInternalSnapshot",
-      // Because get-snapshot might return a falsy value.
-      // So check for the explicit __reactInternalSnapshotFlag flag to determine behavior.
-      var snapshot = this.__reactInternalSnapshotFlag
-        ? this.__reactInternalSnapshot
-        : maybeSnapshot;
-
-      componentDidUpdate.call(this, prevProps, prevState, snapshot);
-    };
-  }
-
-  return Component;
-}
-
-
-
-
-/***/ }),
-
-/***/ "./node_modules/react-modal/lib/components/Modal.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/react-modal/lib/components/Modal.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.bodyOpenClassName = exports.portalClassName = undefined;
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _ModalPortal = __webpack_require__(/*! ./ModalPortal */ "./node_modules/react-modal/lib/components/ModalPortal.js");
-
-var _ModalPortal2 = _interopRequireDefault(_ModalPortal);
-
-var _ariaAppHider = __webpack_require__(/*! ../helpers/ariaAppHider */ "./node_modules/react-modal/lib/helpers/ariaAppHider.js");
-
-var ariaAppHider = _interopRequireWildcard(_ariaAppHider);
-
-var _safeHTMLElement = __webpack_require__(/*! ../helpers/safeHTMLElement */ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js");
-
-var _safeHTMLElement2 = _interopRequireDefault(_safeHTMLElement);
-
-var _reactLifecyclesCompat = __webpack_require__(/*! react-lifecycles-compat */ "./node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js");
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var portalClassName = exports.portalClassName = "ReactModalPortal";
-var bodyOpenClassName = exports.bodyOpenClassName = "ReactModal__Body--open";
-
-var isReact16 = _safeHTMLElement.canUseDOM && _reactDom2.default.createPortal !== undefined;
-
-var getCreatePortal = function getCreatePortal() {
-  return isReact16 ? _reactDom2.default.createPortal : _reactDom2.default.unstable_renderSubtreeIntoContainer;
-};
-
-function getParentElement(parentSelector) {
-  return parentSelector();
-}
-
-var Modal = function (_Component) {
-  _inherits(Modal, _Component);
-
-  function Modal() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
-    _classCallCheck(this, Modal);
-
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Modal.__proto__ || Object.getPrototypeOf(Modal)).call.apply(_ref, [this].concat(args))), _this), _this.removePortal = function () {
-      !isReact16 && _reactDom2.default.unmountComponentAtNode(_this.node);
-      var parent = getParentElement(_this.props.parentSelector);
-      if (parent && parent.contains(_this.node)) {
-        parent.removeChild(_this.node);
-      } else {
-        // eslint-disable-next-line no-console
-        console.warn('React-Modal: "parentSelector" prop did not returned any DOM ' + "element. Make sure that the parent element is unmounted to " + "avoid any memory leaks.");
-      }
-    }, _this.portalRef = function (ref) {
-      _this.portal = ref;
-    }, _this.renderPortal = function (props) {
-      var createPortal = getCreatePortal();
-      var portal = createPortal(_this, _react2.default.createElement(_ModalPortal2.default, _extends({ defaultStyles: Modal.defaultStyles }, props)), _this.node);
-      _this.portalRef(portal);
-    }, _temp), _possibleConstructorReturn(_this, _ret);
-  }
-
-  _createClass(Modal, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      if (!_safeHTMLElement.canUseDOM) return;
-
-      if (!isReact16) {
-        this.node = document.createElement("div");
-      }
-      this.node.className = this.props.portalClassName;
-
-      var parent = getParentElement(this.props.parentSelector);
-      parent.appendChild(this.node);
-
-      !isReact16 && this.renderPortal(this.props);
-    }
-  }, {
-    key: "getSnapshotBeforeUpdate",
-    value: function getSnapshotBeforeUpdate(prevProps) {
-      var prevParent = getParentElement(prevProps.parentSelector);
-      var nextParent = getParentElement(this.props.parentSelector);
-      return { prevParent: prevParent, nextParent: nextParent };
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prevProps, _, snapshot) {
-      if (!_safeHTMLElement.canUseDOM) return;
-      var _props = this.props,
-          isOpen = _props.isOpen,
-          portalClassName = _props.portalClassName;
-
-
-      if (prevProps.portalClassName !== portalClassName) {
-        this.node.className = portalClassName;
-      }
-
-      var prevParent = snapshot.prevParent,
-          nextParent = snapshot.nextParent;
-
-      if (nextParent !== prevParent) {
-        prevParent.removeChild(this.node);
-        nextParent.appendChild(this.node);
-      }
-
-      // Stop unnecessary renders if modal is remaining closed
-      if (!prevProps.isOpen && !isOpen) return;
-
-      !isReact16 && this.renderPortal(this.props);
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      if (!_safeHTMLElement.canUseDOM || !this.node || !this.portal) return;
-
-      var state = this.portal.state;
-      var now = Date.now();
-      var closesAt = state.isOpen && this.props.closeTimeoutMS && (state.closesAt || now + this.props.closeTimeoutMS);
-
-      if (closesAt) {
-        if (!state.beforeClose) {
-          this.portal.closeWithTimeout();
-        }
-
-        setTimeout(this.removePortal, closesAt - now);
-      } else {
-        this.removePortal();
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      if (!_safeHTMLElement.canUseDOM || !isReact16) {
-        return null;
-      }
-
-      if (!this.node && isReact16) {
-        this.node = document.createElement("div");
-      }
-
-      var createPortal = getCreatePortal();
-      return createPortal(_react2.default.createElement(_ModalPortal2.default, _extends({
-        ref: this.portalRef,
-        defaultStyles: Modal.defaultStyles
-      }, this.props)), this.node);
-    }
-  }], [{
-    key: "setAppElement",
-    value: function setAppElement(element) {
-      ariaAppHider.setElement(element);
-    }
-
-    /* eslint-disable react/no-unused-prop-types */
-
-    /* eslint-enable react/no-unused-prop-types */
-
-  }]);
-
-  return Modal;
-}(_react.Component);
-
-Modal.propTypes = {
-  isOpen: _propTypes2.default.bool.isRequired,
-  style: _propTypes2.default.shape({
-    content: _propTypes2.default.object,
-    overlay: _propTypes2.default.object
-  }),
-  portalClassName: _propTypes2.default.string,
-  bodyOpenClassName: _propTypes2.default.string,
-  htmlOpenClassName: _propTypes2.default.string,
-  className: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.shape({
-    base: _propTypes2.default.string.isRequired,
-    afterOpen: _propTypes2.default.string.isRequired,
-    beforeClose: _propTypes2.default.string.isRequired
-  })]),
-  overlayClassName: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.shape({
-    base: _propTypes2.default.string.isRequired,
-    afterOpen: _propTypes2.default.string.isRequired,
-    beforeClose: _propTypes2.default.string.isRequired
-  })]),
-  appElement: _propTypes2.default.instanceOf(_safeHTMLElement2.default),
-  onAfterOpen: _propTypes2.default.func,
-  onRequestClose: _propTypes2.default.func,
-  closeTimeoutMS: _propTypes2.default.number,
-  ariaHideApp: _propTypes2.default.bool,
-  shouldFocusAfterRender: _propTypes2.default.bool,
-  shouldCloseOnOverlayClick: _propTypes2.default.bool,
-  shouldReturnFocusAfterClose: _propTypes2.default.bool,
-  preventScroll: _propTypes2.default.bool,
-  parentSelector: _propTypes2.default.func,
-  aria: _propTypes2.default.object,
-  data: _propTypes2.default.object,
-  role: _propTypes2.default.string,
-  contentLabel: _propTypes2.default.string,
-  shouldCloseOnEsc: _propTypes2.default.bool,
-  overlayRef: _propTypes2.default.func,
-  contentRef: _propTypes2.default.func,
-  id: _propTypes2.default.string,
-  overlayElement: _propTypes2.default.func,
-  contentElement: _propTypes2.default.func
-};
-Modal.defaultProps = {
-  isOpen: false,
-  portalClassName: portalClassName,
-  bodyOpenClassName: bodyOpenClassName,
-  role: "dialog",
-  ariaHideApp: true,
-  closeTimeoutMS: 0,
-  shouldFocusAfterRender: true,
-  shouldCloseOnEsc: true,
-  shouldCloseOnOverlayClick: true,
-  shouldReturnFocusAfterClose: true,
-  preventScroll: false,
-  parentSelector: function parentSelector() {
-    return document.body;
-  },
-  overlayElement: function overlayElement(props, contentEl) {
-    return _react2.default.createElement(
-      "div",
-      props,
-      contentEl
-    );
-  },
-  contentElement: function contentElement(props, children) {
-    return _react2.default.createElement(
-      "div",
-      props,
-      children
-    );
-  }
-};
-Modal.defaultStyles = {
-  overlay: {
-    position: "fixed",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: "rgba(255, 255, 255, 0.75)"
-  },
-  content: {
-    position: "absolute",
-    top: "40px",
-    left: "40px",
-    right: "40px",
-    bottom: "40px",
-    border: "1px solid #ccc",
-    background: "#fff",
-    overflow: "auto",
-    WebkitOverflowScrolling: "touch",
-    borderRadius: "4px",
-    outline: "none",
-    padding: "20px"
-  }
-};
-
-
-(0, _reactLifecyclesCompat.polyfill)(Modal);
-
-exports.default = Modal;
-
-/***/ }),
-
-/***/ "./node_modules/react-modal/lib/components/ModalPortal.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/react-modal/lib/components/ModalPortal.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _focusManager = __webpack_require__(/*! ../helpers/focusManager */ "./node_modules/react-modal/lib/helpers/focusManager.js");
-
-var focusManager = _interopRequireWildcard(_focusManager);
-
-var _scopeTab = __webpack_require__(/*! ../helpers/scopeTab */ "./node_modules/react-modal/lib/helpers/scopeTab.js");
-
-var _scopeTab2 = _interopRequireDefault(_scopeTab);
-
-var _ariaAppHider = __webpack_require__(/*! ../helpers/ariaAppHider */ "./node_modules/react-modal/lib/helpers/ariaAppHider.js");
-
-var ariaAppHider = _interopRequireWildcard(_ariaAppHider);
-
-var _classList = __webpack_require__(/*! ../helpers/classList */ "./node_modules/react-modal/lib/helpers/classList.js");
-
-var classList = _interopRequireWildcard(_classList);
-
-var _safeHTMLElement = __webpack_require__(/*! ../helpers/safeHTMLElement */ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js");
-
-var _safeHTMLElement2 = _interopRequireDefault(_safeHTMLElement);
-
-var _portalOpenInstances = __webpack_require__(/*! ../helpers/portalOpenInstances */ "./node_modules/react-modal/lib/helpers/portalOpenInstances.js");
-
-var _portalOpenInstances2 = _interopRequireDefault(_portalOpenInstances);
-
-__webpack_require__(/*! ../helpers/bodyTrap */ "./node_modules/react-modal/lib/helpers/bodyTrap.js");
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-// so that our CSS is statically analyzable
-var CLASS_NAMES = {
-  overlay: "ReactModal__Overlay",
-  content: "ReactModal__Content"
-};
-
-var TAB_KEY = 9;
-var ESC_KEY = 27;
-
-var ariaHiddenInstances = 0;
-
-var ModalPortal = function (_Component) {
-  _inherits(ModalPortal, _Component);
-
-  function ModalPortal(props) {
-    _classCallCheck(this, ModalPortal);
-
-    var _this = _possibleConstructorReturn(this, (ModalPortal.__proto__ || Object.getPrototypeOf(ModalPortal)).call(this, props));
-
-    _this.setOverlayRef = function (overlay) {
-      _this.overlay = overlay;
-      _this.props.overlayRef && _this.props.overlayRef(overlay);
-    };
-
-    _this.setContentRef = function (content) {
-      _this.content = content;
-      _this.props.contentRef && _this.props.contentRef(content);
-    };
-
-    _this.afterClose = function () {
-      var _this$props = _this.props,
-          appElement = _this$props.appElement,
-          ariaHideApp = _this$props.ariaHideApp,
-          htmlOpenClassName = _this$props.htmlOpenClassName,
-          bodyOpenClassName = _this$props.bodyOpenClassName;
-
-      // Remove classes.
-
-      bodyOpenClassName && classList.remove(document.body, bodyOpenClassName);
-
-      htmlOpenClassName && classList.remove(document.getElementsByTagName("html")[0], htmlOpenClassName);
-
-      // Reset aria-hidden attribute if all modals have been removed
-      if (ariaHideApp && ariaHiddenInstances > 0) {
-        ariaHiddenInstances -= 1;
-
-        if (ariaHiddenInstances === 0) {
-          ariaAppHider.show(appElement);
-        }
-      }
-
-      if (_this.props.shouldFocusAfterRender) {
-        if (_this.props.shouldReturnFocusAfterClose) {
-          focusManager.returnFocus(_this.props.preventScroll);
-          focusManager.teardownScopedFocus();
-        } else {
-          focusManager.popWithoutFocus();
-        }
-      }
-
-      if (_this.props.onAfterClose) {
-        _this.props.onAfterClose();
-      }
-
-      _portalOpenInstances2.default.deregister(_this);
-    };
-
-    _this.open = function () {
-      _this.beforeOpen();
-      if (_this.state.afterOpen && _this.state.beforeClose) {
-        clearTimeout(_this.closeTimer);
-        _this.setState({ beforeClose: false });
-      } else {
-        if (_this.props.shouldFocusAfterRender) {
-          focusManager.setupScopedFocus(_this.node);
-          focusManager.markForFocusLater();
-        }
-
-        _this.setState({ isOpen: true }, function () {
-          _this.setState({ afterOpen: true });
-
-          if (_this.props.isOpen && _this.props.onAfterOpen) {
-            _this.props.onAfterOpen({
-              overlayEl: _this.overlay,
-              contentEl: _this.content
-            });
-          }
-        });
-      }
-    };
-
-    _this.close = function () {
-      if (_this.props.closeTimeoutMS > 0) {
-        _this.closeWithTimeout();
-      } else {
-        _this.closeWithoutTimeout();
-      }
-    };
-
-    _this.focusContent = function () {
-      return _this.content && !_this.contentHasFocus() && _this.content.focus({ preventScroll: true });
-    };
-
-    _this.closeWithTimeout = function () {
-      var closesAt = Date.now() + _this.props.closeTimeoutMS;
-      _this.setState({ beforeClose: true, closesAt: closesAt }, function () {
-        _this.closeTimer = setTimeout(_this.closeWithoutTimeout, _this.state.closesAt - Date.now());
-      });
-    };
-
-    _this.closeWithoutTimeout = function () {
-      _this.setState({
-        beforeClose: false,
-        isOpen: false,
-        afterOpen: false,
-        closesAt: null
-      }, _this.afterClose);
-    };
-
-    _this.handleKeyDown = function (event) {
-      if (event.keyCode === TAB_KEY) {
-        (0, _scopeTab2.default)(_this.content, event);
-      }
-
-      if (_this.props.shouldCloseOnEsc && event.keyCode === ESC_KEY) {
-        event.stopPropagation();
-        _this.requestClose(event);
-      }
-    };
-
-    _this.handleOverlayOnClick = function (event) {
-      if (_this.shouldClose === null) {
-        _this.shouldClose = true;
-      }
-
-      if (_this.shouldClose && _this.props.shouldCloseOnOverlayClick) {
-        if (_this.ownerHandlesClose()) {
-          _this.requestClose(event);
-        } else {
-          _this.focusContent();
-        }
-      }
-      _this.shouldClose = null;
-    };
-
-    _this.handleContentOnMouseUp = function () {
-      _this.shouldClose = false;
-    };
-
-    _this.handleOverlayOnMouseDown = function (event) {
-      if (!_this.props.shouldCloseOnOverlayClick && event.target == _this.overlay) {
-        event.preventDefault();
-      }
-    };
-
-    _this.handleContentOnClick = function () {
-      _this.shouldClose = false;
-    };
-
-    _this.handleContentOnMouseDown = function () {
-      _this.shouldClose = false;
-    };
-
-    _this.requestClose = function (event) {
-      return _this.ownerHandlesClose() && _this.props.onRequestClose(event);
-    };
-
-    _this.ownerHandlesClose = function () {
-      return _this.props.onRequestClose;
-    };
-
-    _this.shouldBeClosed = function () {
-      return !_this.state.isOpen && !_this.state.beforeClose;
-    };
-
-    _this.contentHasFocus = function () {
-      return document.activeElement === _this.content || _this.content.contains(document.activeElement);
-    };
-
-    _this.buildClassName = function (which, additional) {
-      var classNames = (typeof additional === "undefined" ? "undefined" : _typeof(additional)) === "object" ? additional : {
-        base: CLASS_NAMES[which],
-        afterOpen: CLASS_NAMES[which] + "--after-open",
-        beforeClose: CLASS_NAMES[which] + "--before-close"
-      };
-      var className = classNames.base;
-      if (_this.state.afterOpen) {
-        className = className + " " + classNames.afterOpen;
-      }
-      if (_this.state.beforeClose) {
-        className = className + " " + classNames.beforeClose;
-      }
-      return typeof additional === "string" && additional ? className + " " + additional : className;
-    };
-
-    _this.attributesFromObject = function (prefix, items) {
-      return Object.keys(items).reduce(function (acc, name) {
-        acc[prefix + "-" + name] = items[name];
-        return acc;
-      }, {});
-    };
-
-    _this.state = {
-      afterOpen: false,
-      beforeClose: false
-    };
-
-    _this.shouldClose = null;
-    _this.moveFromContentToOverlay = null;
-    return _this;
-  }
-
-  _createClass(ModalPortal, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      if (this.props.isOpen) {
-        this.open();
-      }
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prevProps, prevState) {
-      if (true) {
-        if (prevProps.bodyOpenClassName !== this.props.bodyOpenClassName) {
-          // eslint-disable-next-line no-console
-          console.warn('React-Modal: "bodyOpenClassName" prop has been modified. ' + "This may cause unexpected behavior when multiple modals are open.");
-        }
-        if (prevProps.htmlOpenClassName !== this.props.htmlOpenClassName) {
-          // eslint-disable-next-line no-console
-          console.warn('React-Modal: "htmlOpenClassName" prop has been modified. ' + "This may cause unexpected behavior when multiple modals are open.");
-        }
-      }
-
-      if (this.props.isOpen && !prevProps.isOpen) {
-        this.open();
-      } else if (!this.props.isOpen && prevProps.isOpen) {
-        this.close();
-      }
-
-      // Focus only needs to be set once when the modal is being opened
-      if (this.props.shouldFocusAfterRender && this.state.isOpen && !prevState.isOpen) {
-        this.focusContent();
-      }
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      if (this.state.isOpen) {
-        this.afterClose();
-      }
-      clearTimeout(this.closeTimer);
-    }
-  }, {
-    key: "beforeOpen",
-    value: function beforeOpen() {
-      var _props = this.props,
-          appElement = _props.appElement,
-          ariaHideApp = _props.ariaHideApp,
-          htmlOpenClassName = _props.htmlOpenClassName,
-          bodyOpenClassName = _props.bodyOpenClassName;
-
-      // Add classes.
-
-      bodyOpenClassName && classList.add(document.body, bodyOpenClassName);
-
-      htmlOpenClassName && classList.add(document.getElementsByTagName("html")[0], htmlOpenClassName);
-
-      if (ariaHideApp) {
-        ariaHiddenInstances += 1;
-        ariaAppHider.hide(appElement);
-      }
-
-      _portalOpenInstances2.default.register(this);
-    }
-
-    // Don't steal focus from inner elements
-
-  }, {
-    key: "render",
-    value: function render() {
-      var _props2 = this.props,
-          id = _props2.id,
-          className = _props2.className,
-          overlayClassName = _props2.overlayClassName,
-          defaultStyles = _props2.defaultStyles,
-          children = _props2.children;
-
-      var contentStyles = className ? {} : defaultStyles.content;
-      var overlayStyles = overlayClassName ? {} : defaultStyles.overlay;
-
-      if (this.shouldBeClosed()) {
-        return null;
-      }
-
-      var overlayProps = {
-        ref: this.setOverlayRef,
-        className: this.buildClassName("overlay", overlayClassName),
-        style: _extends({}, overlayStyles, this.props.style.overlay),
-        onClick: this.handleOverlayOnClick,
-        onMouseDown: this.handleOverlayOnMouseDown
-      };
-
-      var contentProps = _extends({
-        id: id,
-        ref: this.setContentRef,
-        style: _extends({}, contentStyles, this.props.style.content),
-        className: this.buildClassName("content", className),
-        tabIndex: "-1",
-        onKeyDown: this.handleKeyDown,
-        onMouseDown: this.handleContentOnMouseDown,
-        onMouseUp: this.handleContentOnMouseUp,
-        onClick: this.handleContentOnClick,
-        role: this.props.role,
-        "aria-label": this.props.contentLabel
-      }, this.attributesFromObject("aria", _extends({ modal: true }, this.props.aria)), this.attributesFromObject("data", this.props.data || {}), {
-        "data-testid": this.props.testId
-      });
-
-      var contentElement = this.props.contentElement(contentProps, children);
-      return this.props.overlayElement(overlayProps, contentElement);
-    }
-  }]);
-
-  return ModalPortal;
-}(_react.Component);
-
-ModalPortal.defaultProps = {
-  style: {
-    overlay: {},
-    content: {}
-  },
-  defaultStyles: {}
-};
-ModalPortal.propTypes = {
-  isOpen: _propTypes2.default.bool.isRequired,
-  defaultStyles: _propTypes2.default.shape({
-    content: _propTypes2.default.object,
-    overlay: _propTypes2.default.object
-  }),
-  style: _propTypes2.default.shape({
-    content: _propTypes2.default.object,
-    overlay: _propTypes2.default.object
-  }),
-  className: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]),
-  overlayClassName: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]),
-  bodyOpenClassName: _propTypes2.default.string,
-  htmlOpenClassName: _propTypes2.default.string,
-  ariaHideApp: _propTypes2.default.bool,
-  appElement: _propTypes2.default.instanceOf(_safeHTMLElement2.default),
-  onAfterOpen: _propTypes2.default.func,
-  onAfterClose: _propTypes2.default.func,
-  onRequestClose: _propTypes2.default.func,
-  closeTimeoutMS: _propTypes2.default.number,
-  shouldFocusAfterRender: _propTypes2.default.bool,
-  shouldCloseOnOverlayClick: _propTypes2.default.bool,
-  shouldReturnFocusAfterClose: _propTypes2.default.bool,
-  preventScroll: _propTypes2.default.bool,
-  role: _propTypes2.default.string,
-  contentLabel: _propTypes2.default.string,
-  aria: _propTypes2.default.object,
-  data: _propTypes2.default.object,
-  children: _propTypes2.default.node,
-  shouldCloseOnEsc: _propTypes2.default.bool,
-  overlayRef: _propTypes2.default.func,
-  contentRef: _propTypes2.default.func,
-  id: _propTypes2.default.string,
-  overlayElement: _propTypes2.default.func,
-  contentElement: _propTypes2.default.func,
-  testId: _propTypes2.default.string
-};
-exports.default = ModalPortal;
-module.exports = exports["default"];
-
-/***/ }),
-
-/***/ "./node_modules/react-modal/lib/helpers/ariaAppHider.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/react-modal/lib/helpers/ariaAppHider.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.assertNodeList = assertNodeList;
-exports.setElement = setElement;
-exports.validateElement = validateElement;
-exports.hide = hide;
-exports.show = show;
-exports.documentNotReadyOrSSRTesting = documentNotReadyOrSSRTesting;
-exports.resetForTesting = resetForTesting;
-
-var _warning = __webpack_require__(/*! warning */ "./node_modules/warning/warning.js");
-
-var _warning2 = _interopRequireDefault(_warning);
-
-var _safeHTMLElement = __webpack_require__(/*! ./safeHTMLElement */ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var globalElement = null;
-
-function assertNodeList(nodeList, selector) {
-  if (!nodeList || !nodeList.length) {
-    throw new Error("react-modal: No elements were found for selector " + selector + ".");
-  }
-}
-
-function setElement(element) {
-  var useElement = element;
-  if (typeof useElement === "string" && _safeHTMLElement.canUseDOM) {
-    var el = document.querySelectorAll(useElement);
-    assertNodeList(el, useElement);
-    useElement = "length" in el ? el[0] : el;
-  }
-  globalElement = useElement || globalElement;
-  return globalElement;
-}
-
-function validateElement(appElement) {
-  if (!appElement && !globalElement) {
-    (0, _warning2.default)(false, ["react-modal: App element is not defined.", "Please use `Modal.setAppElement(el)` or set `appElement={el}`.", "This is needed so screen readers don't see main content", "when modal is opened. It is not recommended, but you can opt-out", "by setting `ariaHideApp={false}`."].join(" "));
-
-    return false;
-  }
-
-  return true;
-}
-
-function hide(appElement) {
-  if (validateElement(appElement)) {
-    (appElement || globalElement).setAttribute("aria-hidden", "true");
-  }
-}
-
-function show(appElement) {
-  if (validateElement(appElement)) {
-    (appElement || globalElement).removeAttribute("aria-hidden");
-  }
-}
-
-function documentNotReadyOrSSRTesting() {
-  globalElement = null;
-}
-
-function resetForTesting() {
-  globalElement = null;
-}
-
-/***/ }),
-
-/***/ "./node_modules/react-modal/lib/helpers/bodyTrap.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/react-modal/lib/helpers/bodyTrap.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _portalOpenInstances = __webpack_require__(/*! ./portalOpenInstances */ "./node_modules/react-modal/lib/helpers/portalOpenInstances.js");
-
-var _portalOpenInstances2 = _interopRequireDefault(_portalOpenInstances);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// Body focus trap see Issue #742
-
-var before = void 0,
-    after = void 0,
-    instances = [];
-
-function focusContent() {
-  if (instances.length === 0) {
-    if (true) {
-      // eslint-disable-next-line no-console
-      console.warn("React-Modal: Open instances > 0 expected");
-    }
-    return;
-  }
-  instances[instances.length - 1].focusContent();
-}
-
-function bodyTrap(eventType, openInstances) {
-  if (!before || !after) {
-    before = document.createElement("div");
-    before.setAttribute("data-react-modal-body-trap", "");
-    before.style.position = "absolute";
-    before.style.opacity = "0";
-    before.setAttribute("tabindex", "0");
-    before.addEventListener("focus", focusContent);
-    after = before.cloneNode();
-    after.addEventListener("focus", focusContent);
-  }
-
-  instances = openInstances;
-
-  if (instances.length > 0) {
-    // Add focus trap
-    if (document.body.firstChild !== before) {
-      document.body.insertBefore(before, document.body.firstChild);
-    }
-    if (document.body.lastChild !== after) {
-      document.body.appendChild(after);
-    }
-  } else {
-    // Remove focus trap
-    if (before.parentElement) {
-      before.parentElement.removeChild(before);
-    }
-    if (after.parentElement) {
-      after.parentElement.removeChild(after);
-    }
-  }
-}
-
-_portalOpenInstances2.default.subscribe(bodyTrap);
-
-/***/ }),
-
-/***/ "./node_modules/react-modal/lib/helpers/classList.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/react-modal/lib/helpers/classList.js ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.dumpClassLists = dumpClassLists;
-var htmlClassList = {};
-var docBodyClassList = {};
-
-function dumpClassLists() {
-  if (true) {
-    var classes = document.getElementsByTagName("html")[0].className;
-    var buffer = "Show tracked classes:\n\n";
-
-    buffer += "<html /> (" + classes + "):\n";
-    for (var x in htmlClassList) {
-      buffer += "  " + x + " " + htmlClassList[x] + "\n";
-    }
-
-    classes = document.body.className;
-
-    // eslint-disable-next-line max-len
-    buffer += "\n\ndoc.body (" + classes + "):\n";
-    for (var _x in docBodyClassList) {
-      buffer += "  " + _x + " " + docBodyClassList[_x] + "\n";
-    }
-
-    buffer += "\n";
-
-    // eslint-disable-next-line no-console
-    console.log(buffer);
-  }
-}
-
-/**
- * Track the number of reference of a class.
- * @param {object} poll The poll to receive the reference.
- * @param {string} className The class name.
- * @return {string}
- */
-var incrementReference = function incrementReference(poll, className) {
-  if (!poll[className]) {
-    poll[className] = 0;
-  }
-  poll[className] += 1;
-  return className;
-};
-
-/**
- * Drop the reference of a class.
- * @param {object} poll The poll to receive the reference.
- * @param {string} className The class name.
- * @return {string}
- */
-var decrementReference = function decrementReference(poll, className) {
-  if (poll[className]) {
-    poll[className] -= 1;
-  }
-  return className;
-};
-
-/**
- * Track a class and add to the given class list.
- * @param {Object} classListRef A class list of an element.
- * @param {Object} poll         The poll to be used.
- * @param {Array}  classes      The list of classes to be tracked.
- */
-var trackClass = function trackClass(classListRef, poll, classes) {
-  classes.forEach(function (className) {
-    incrementReference(poll, className);
-    classListRef.add(className);
-  });
-};
-
-/**
- * Untrack a class and remove from the given class list if the reference
- * reaches 0.
- * @param {Object} classListRef A class list of an element.
- * @param {Object} poll         The poll to be used.
- * @param {Array}  classes      The list of classes to be untracked.
- */
-var untrackClass = function untrackClass(classListRef, poll, classes) {
-  classes.forEach(function (className) {
-    decrementReference(poll, className);
-    poll[className] === 0 && classListRef.remove(className);
-  });
-};
-
-/**
- * Public inferface to add classes to the document.body.
- * @param {string} bodyClass The class string to be added.
- *                           It may contain more then one class
- *                           with ' ' as separator.
- */
-var add = exports.add = function add(element, classString) {
-  return trackClass(element.classList, element.nodeName.toLowerCase() == "html" ? htmlClassList : docBodyClassList, classString.split(" "));
-};
-
-/**
- * Public inferface to remove classes from the document.body.
- * @param {string} bodyClass The class string to be added.
- *                           It may contain more then one class
- *                           with ' ' as separator.
- */
-var remove = exports.remove = function remove(element, classString) {
-  return untrackClass(element.classList, element.nodeName.toLowerCase() == "html" ? htmlClassList : docBodyClassList, classString.split(" "));
-};
-
-/***/ }),
-
-/***/ "./node_modules/react-modal/lib/helpers/focusManager.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/react-modal/lib/helpers/focusManager.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.handleBlur = handleBlur;
-exports.handleFocus = handleFocus;
-exports.markForFocusLater = markForFocusLater;
-exports.returnFocus = returnFocus;
-exports.popWithoutFocus = popWithoutFocus;
-exports.setupScopedFocus = setupScopedFocus;
-exports.teardownScopedFocus = teardownScopedFocus;
-
-var _tabbable = __webpack_require__(/*! ../helpers/tabbable */ "./node_modules/react-modal/lib/helpers/tabbable.js");
-
-var _tabbable2 = _interopRequireDefault(_tabbable);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var focusLaterElements = [];
-var modalElement = null;
-var needToFocus = false;
-
-function handleBlur() {
-  needToFocus = true;
-}
-
-function handleFocus() {
-  if (needToFocus) {
-    needToFocus = false;
-    if (!modalElement) {
-      return;
-    }
-    // need to see how jQuery shims document.on('focusin') so we don't need the
-    // setTimeout, firefox doesn't support focusin, if it did, we could focus
-    // the element outside of a setTimeout. Side-effect of this implementation
-    // is that the document.body gets focus, and then we focus our element right
-    // after, seems fine.
-    setTimeout(function () {
-      if (modalElement.contains(document.activeElement)) {
-        return;
-      }
-      var el = (0, _tabbable2.default)(modalElement)[0] || modalElement;
-      el.focus();
-    }, 0);
-  }
-}
-
-function markForFocusLater() {
-  focusLaterElements.push(document.activeElement);
-}
-
-/* eslint-disable no-console */
-function returnFocus() {
-  var preventScroll = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-
-  var toFocus = null;
-  try {
-    if (focusLaterElements.length !== 0) {
-      toFocus = focusLaterElements.pop();
-      toFocus.focus({ preventScroll: preventScroll });
-    }
-    return;
-  } catch (e) {
-    console.warn(["You tried to return focus to", toFocus, "but it is not in the DOM anymore"].join(" "));
-  }
-}
-/* eslint-enable no-console */
-
-function popWithoutFocus() {
-  focusLaterElements.length > 0 && focusLaterElements.pop();
-}
-
-function setupScopedFocus(element) {
-  modalElement = element;
-
-  if (window.addEventListener) {
-    window.addEventListener("blur", handleBlur, false);
-    document.addEventListener("focus", handleFocus, true);
-  } else {
-    window.attachEvent("onBlur", handleBlur);
-    document.attachEvent("onFocus", handleFocus);
-  }
-}
-
-function teardownScopedFocus() {
-  modalElement = null;
-
-  if (window.addEventListener) {
-    window.removeEventListener("blur", handleBlur);
-    document.removeEventListener("focus", handleFocus);
-  } else {
-    window.detachEvent("onBlur", handleBlur);
-    document.detachEvent("onFocus", handleFocus);
-  }
-}
-
-/***/ }),
-
-/***/ "./node_modules/react-modal/lib/helpers/portalOpenInstances.js":
+/***/ "./node_modules/react-notify-toast/bin/components/Container.js":
 /*!*********************************************************************!*\
-  !*** ./node_modules/react-modal/lib/helpers/portalOpenInstances.js ***!
+  !*** ./node_modules/react-notify-toast/bin/components/Container.js ***!
   \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -27831,67 +26513,80 @@ function teardownScopedFocus() {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+
+var _defaults = __webpack_require__(/*! ../defaults */ "./node_modules/react-notify-toast/bin/defaults.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-// Tracks portals that are open and emits events to subscribers
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-var PortalOpenInstances = function PortalOpenInstances() {
-  var _this = this;
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-  _classCallCheck(this, PortalOpenInstances);
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-  this.register = function (openInstance) {
-    if (_this.openInstances.indexOf(openInstance) !== -1) {
-      if (true) {
-        // eslint-disable-next-line no-console
-        console.warn("React-Modal: Cannot register modal instance that's already open");
-      }
-      return;
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+/* Export notification container */
+var _default =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(_default, _React$Component);
+
+  function _default() {
+    _classCallCheck(this, _default);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(_default).apply(this, arguments));
+  }
+
+  _createClass(_default, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      (0, _defaults.mergeOptions)(this.props.options);
     }
-    _this.openInstances.push(openInstance);
-    _this.emit("register");
-  };
-
-  this.deregister = function (openInstance) {
-    var index = _this.openInstances.indexOf(openInstance);
-    if (index === -1) {
-      if (true) {
-        // eslint-disable-next-line no-console
-        console.warn("React-Modal: Unable to deregister " + openInstance + " as " + "it was never registered");
-      }
-      return;
+  }, {
+    key: "render",
+    value: function render() {
+      return _react["default"].createElement("div", {
+        id: _defaults.defaults.wrapperId
+      });
     }
-    _this.openInstances.splice(index, 1);
-    _this.emit("deregister");
-  };
+  }]);
 
-  this.subscribe = function (callback) {
-    _this.subscribers.push(callback);
-  };
+  return _default;
+}(_react["default"].Component);
 
-  this.emit = function (eventType) {
-    _this.subscribers.forEach(function (subscriber) {
-      return subscriber(eventType,
-      // shallow copy to avoid accidental mutation
-      _this.openInstances.slice());
-    });
-  };
+exports["default"] = _default;
 
-  this.openInstances = [];
-  this.subscribers = [];
-};
+_defineProperty(_default, "propTypes", {
+  options: _propTypes["default"].object
+});
 
-var portalOpenInstances = new PortalOpenInstances();
-
-exports.default = portalOpenInstances;
-module.exports = exports["default"];
+_defineProperty(_default, "defaultProps", {
+  options: {}
+});
 
 /***/ }),
 
-/***/ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js":
+/***/ "./node_modules/react-notify-toast/bin/components/Toast.js":
 /*!*****************************************************************!*\
-  !*** ./node_modules/react-modal/lib/helpers/safeHTMLElement.js ***!
+  !*** ./node_modules/react-notify-toast/bin/components/Toast.js ***!
   \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -27902,28 +26597,171 @@ module.exports = exports["default"];
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.canUseDOM = undefined;
+exports["default"] = void 0;
 
-var _exenv = __webpack_require__(/*! exenv */ "./node_modules/exenv/index.js");
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
-var _exenv2 = _interopRequireDefault(_exenv);
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _objectAssign = _interopRequireDefault(__webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js"));
 
-var EE = _exenv2.default;
+var _defaults = __webpack_require__(/*! ../defaults */ "./node_modules/react-notify-toast/bin/defaults.js");
 
-var SafeHTMLElement = EE.canUseDOM ? window.HTMLElement : {};
+var _stylesheet = _interopRequireDefault(__webpack_require__(/*! ../stylesheet */ "./node_modules/react-notify-toast/bin/stylesheet.js"));
 
-var canUseDOM = exports.canUseDOM = EE.canUseDOM;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-exports.default = SafeHTMLElement;
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+/* React Notification Component */
+var Toast =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Toast, _React$Component);
+
+  function Toast() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, Toast);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Toast)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      containerStyle: _stylesheet["default"].styles.container
+    });
+
+    return _this;
+  }
+
+  _createClass(Toast, [{
+    key: "getToastStyle",
+    value: function getToastStyle() {
+      var _this$props = this.props,
+          type = _this$props.type,
+          color = _this$props.color;
+      var styles = _stylesheet["default"].styles;
+      var contentStyle = {};
+      /* If type is set, merge toast action styles with base */
+
+      switch (type) {
+        case 'success':
+        case 'error':
+        case 'warning':
+        case 'info':
+          contentStyle = (0, _objectAssign["default"])({}, styles.content, _defaults.defaults.colors[type]);
+          break;
+
+        case 'custom':
+          {
+            var customStyle = {
+              backgroundColor: color.background,
+              color: color.text
+            };
+            contentStyle = (0, _objectAssign["default"])({}, styles.content, customStyle);
+          }
+          break;
+
+        default:
+          contentStyle = (0, _objectAssign["default"])({}, styles.content);
+          break;
+      }
+
+      return contentStyle;
+    }
+  }, {
+    key: "animateState",
+    value: function animateState() {
+      var _this2 = this;
+
+      var styles = _stylesheet["default"].styles; // Show
+
+      setTimeout(function () {
+        _this2.updateStyle(styles.show);
+      }, 100); // wait 100ms after the component is called to animate toast.
+      // Timeout -1 displays toast as a persistent notification
+
+      if (this.props.timeout === -1) {
+        return;
+      } // Hide after timeout
+
+
+      setTimeout(function () {
+        _this2.updateStyle(styles.hide);
+      }, this.props.timeout);
+    } // Updates the style of the container with styles for a state (hide/show).
+    // This triggers animations.
+
+  }, {
+    key: "updateStyle",
+    value: function updateStyle(stateStyle) {
+      var styles = _stylesheet["default"].styles;
+      this.setState({
+        containerStyle: (0, _objectAssign["default"])({}, styles.container, stateStyle)
+      });
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.animateState();
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var text = this.props.text;
+      var containerStyle = this.state.containerStyle;
+      return _react["default"].createElement("div", {
+        className: "toast-notification",
+        style: containerStyle
+      }, _react["default"].createElement("span", {
+        style: this.getToastStyle()
+      }, text));
+    }
+  }]);
+
+  return Toast;
+}(_react["default"].Component);
+
+_defineProperty(Toast, "propTypes", {
+  text: _propTypes["default"].oneOfType([_propTypes["default"].string, _propTypes["default"].element]),
+  timeout: _propTypes["default"].number,
+  type: _propTypes["default"].string,
+  color: _propTypes["default"].oneOfType([_propTypes["default"].object, _propTypes["default"].string]),
+  style: _propTypes["default"].oneOfType([_propTypes["default"].object, _propTypes["default"].bool])
+});
+
+var _default = Toast;
+exports["default"] = _default;
 
 /***/ }),
 
-/***/ "./node_modules/react-modal/lib/helpers/scopeTab.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/react-modal/lib/helpers/scopeTab.js ***!
-  \**********************************************************/
+/***/ "./node_modules/react-notify-toast/bin/defaults.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/react-notify-toast/bin/defaults.js ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27933,97 +26771,51 @@ exports.default = SafeHTMLElement;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = scopeTab;
+exports.mergeOptions = mergeOptions;
+exports.defaults = void 0;
 
-var _tabbable = __webpack_require__(/*! ./tabbable */ "./node_modules/react-modal/lib/helpers/tabbable.js");
+var _objectAssign = _interopRequireDefault(__webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js"));
 
-var _tabbable2 = _interopRequireDefault(_tabbable);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function scopeTab(node, event) {
-  var tabbable = (0, _tabbable2.default)(node);
-
-  if (!tabbable.length) {
-    // Do nothing, since there are no elements that can receive focus.
-    event.preventDefault();
-    return;
+var defaults = {
+  wrapperId: 'notification-wrapper',
+  animationDuration: 300,
+  timeout: 5000,
+  zIndex: 1000,
+  top: 0,
+  // Controls the offset from top of viewport.
+  colors: {
+    error: {
+      color: "#FFFFFF",
+      backgroundColor: '#E85742'
+    },
+    success: {
+      color: "#FFFFFF",
+      backgroundColor: '#55CA92'
+    },
+    warning: {
+      color: "#333333",
+      backgroundColor: '#F5E273'
+    },
+    info: {
+      color: "#FFFFFF",
+      backgroundColor: '#4990E2'
+    }
   }
+};
+exports.defaults = defaults;
 
-  var target = void 0;
-
-  var shiftKey = event.shiftKey;
-  var head = tabbable[0];
-  var tail = tabbable[tabbable.length - 1];
-
-  // proceed with default browser behavior on tab.
-  // Focus on last element on shift + tab.
-  if (node === document.activeElement) {
-    if (!shiftKey) return;
-    target = tail;
-  }
-
-  if (tail === document.activeElement && !shiftKey) {
-    target = head;
-  }
-
-  if (head === document.activeElement && shiftKey) {
-    target = tail;
-  }
-
-  if (target) {
-    event.preventDefault();
-    target.focus();
-    return;
-  }
-
-  // Safari radio issue.
-  //
-  // Safari does not move the focus to the radio button,
-  // so we need to force it to really walk through all elements.
-  //
-  // This is very error prone, since we are trying to guess
-  // if it is a safari browser from the first occurence between
-  // chrome or safari.
-  //
-  // The chrome user agent contains the first ocurrence
-  // as the 'chrome/version' and later the 'safari/version'.
-  var checkSafari = /(\bChrome\b|\bSafari\b)\//.exec(navigator.userAgent);
-  var isSafariDesktop = checkSafari != null && checkSafari[1] != "Chrome" && /\biPod\b|\biPad\b/g.exec(navigator.userAgent) == null;
-
-  // If we are not in safari desktop, let the browser control
-  // the focus
-  if (!isSafariDesktop) return;
-
-  var x = tabbable.indexOf(document.activeElement);
-
-  if (x > -1) {
-    x += shiftKey ? -1 : 1;
-  }
-
-  target = tabbable[x];
-
-  // If the tabbable element does not exist,
-  // focus head/tail based on shiftKey
-  if (typeof target === "undefined") {
-    event.preventDefault();
-    target = shiftKey ? tail : head;
-    target.focus();
-    return;
-  }
-
-  event.preventDefault();
-
-  target.focus();
+function mergeOptions(options) {
+  exports.defaults = defaults = (0, _objectAssign["default"])(defaults, options);
 }
-module.exports = exports["default"];
 
 /***/ }),
 
-/***/ "./node_modules/react-modal/lib/helpers/tabbable.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/react-modal/lib/helpers/tabbable.js ***!
-  \**********************************************************/
+/***/ "./node_modules/react-notify-toast/bin/notify.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/react-notify-toast/bin/notify.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28033,68 +26825,165 @@ module.exports = exports["default"];
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = findTabbableDescendants;
-/*!
- * Adapted from jQuery UI core
+exports["default"] = exports.notify = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _reactDom = _interopRequireDefault(__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js"));
+
+var _Toast = _interopRequireDefault(__webpack_require__(/*! ./components/Toast */ "./node_modules/react-notify-toast/bin/components/Toast.js"));
+
+var _Container = _interopRequireDefault(__webpack_require__(/*! ./components/Container */ "./node_modules/react-notify-toast/bin/components/Container.js"));
+
+var _defaults = __webpack_require__(/*! ./defaults */ "./node_modules/react-notify-toast/bin/defaults.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+/* Render React component */
+function renderToast(text, type, timeout, color) {
+  var target = document.getElementById(_defaults.defaults.wrapperId);
+
+  _reactDom["default"].render(_react["default"].createElement(_Toast["default"], {
+    text: text,
+    timeout: timeout,
+    type: type,
+    color: color
+  }), target);
+}
+/* Unmount React component */
+
+
+function hide() {
+  var target = document.getElementById(_defaults.defaults.wrapperId);
+
+  _reactDom["default"].unmountComponentAtNode(target);
+}
+/**
+ * Show Animated Toast Message
+ * Returns true if the toast was shown, or false if show failed due to an existing notification
  *
- * http://jqueryui.com
+ * @param  {String|Node} text    Text/Node to be displayed inside the toast.
+ * @param  {Object}      options Display options for notification (See example below)
  *
- * Copyright 2014 jQuery Foundation and other contributors
- * Released under the MIT license.
- * http://jquery.org/license
- *
- * http://api.jqueryui.com/category/ui-core/
+ * [Options example]
+ * {
+ *   type:    {String} [success/error/info]
+ *   timeout: {Int}    [timeout in ms]
+ *   style:   {Object} [JS representation of CSS]
+ * }
  */
 
-var tabbableNode = /input|select|textarea|button|object/;
 
-function hidesContents(element) {
-  var zeroSize = element.offsetWidth <= 0 && element.offsetHeight <= 0;
+function show(text, type, timeout, color) {
+  if (!document.getElementById(_defaults.defaults.wrapperId).hasChildNodes()) {
+    // Use default timeout if not set.
+    var renderTimeout = timeout || _defaults.defaults.timeout; // Render Component with Props.
 
-  // If the node is empty, this is good enough
-  if (zeroSize && !element.innerHTML) return true;
+    renderToast(text, type, renderTimeout, color);
 
-  // Otherwise we need to check some styles
-  var style = window.getComputedStyle(element);
-  return zeroSize ? style.getPropertyValue("overflow") !== "visible" ||
-  // if 'overflow: visible' set, check if there is actually any overflow
-  element.scrollWidth <= 0 && element.scrollHeight <= 0 : style.getPropertyValue("display") == "none";
-}
+    if (renderTimeout === -1) {
+      return false;
+    } // Unmount react component after the animation finished.
 
-function visible(element) {
-  var parentElement = element;
-  while (parentElement) {
-    if (parentElement === document.body) break;
-    if (hidesContents(parentElement)) return false;
-    parentElement = parentElement.parentNode;
+
+    setTimeout(function () {
+      hide();
+    }, renderTimeout + _defaults.defaults.animationDuration);
+    return true;
   }
-  return true;
-}
 
-function focusable(element, isTabIndexNotNaN) {
-  var nodeName = element.nodeName.toLowerCase();
-  var res = tabbableNode.test(nodeName) && !element.disabled || (nodeName === "a" ? element.href || isTabIndexNotNaN : isTabIndexNotNaN);
-  return res && visible(element);
+  return false;
 }
+/**
+ * Add to Animated Toast Message Queue
+ * Display immediately if no queue
+ * @param  {Number} initialRecallDelay   If the call to show fails because of an existing
+ *                                       notification, how long to wait until we retry (ms)
+ * @param  {Number} recallDelayIncrement Each time a successive call fails, the recall delay
+ *                                       will be incremented by this (ms)
+ * @return {[type]}                      [description]
+ */
 
-function tabbable(element) {
-  var tabIndex = element.getAttribute("tabindex");
-  if (tabIndex === null) tabIndex = undefined;
-  var isTabIndexNaN = isNaN(tabIndex);
-  return (isTabIndexNaN || tabIndex >= 0) && focusable(element, !isTabIndexNaN);
-}
 
-function findTabbableDescendants(element) {
-  return [].slice.call(element.querySelectorAll("*"), 0).filter(tabbable);
+function createShowQueue() {
+  var _this = this;
+
+  var initialRecallDelay = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 500;
+  var recallDelayIncrement = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;
+  // Array to hold queued messages
+  this.msgs = []; // Is the showNotify function in progress - used so we can call showNotify when a
+  // message is added to an empty queue.
+
+  this.isNotifying = false;
+  this.currentRecallDelay = initialRecallDelay; // Retrieve the next message from the queue and try to show it
+
+  this.showNotify = function () {
+    // If there are no messages in the queue
+    if (_this.msgs.length === 0) {
+      _this.isNotifying = false;
+      return;
+    }
+
+    _this.isNotifying = true;
+
+    var current = _this.msgs.pop(); // show will now return true if it is able to send the message,
+    // or false if there is an existing message
+
+
+    if (show(current.text, current.type, current.timeout, current.color)) {
+      _this.currentRecallDelay = initialRecallDelay;
+
+      if (current.timeout > 0) {
+        setTimeout(function () {
+          return _this.showNotify();
+        }, current.timeout + _defaults.defaults.animationDuration);
+      }
+    } else {
+      // If message show failed, re-add the current message to the front of the queue
+      _this.msgs.unshift(current);
+
+      setTimeout(function () {
+        return _this.showNotify();
+      }, _this.currentRecallDelay);
+      _this.currentRecallDelay += recallDelayIncrement;
+    }
+  };
+
+  return function (text) {
+    var type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+    var timeout = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : _defaults.defaults.timeout;
+    var color = arguments.length > 3 ? arguments[3] : undefined;
+
+    _this.msgs.push({
+      text: text,
+      type: type,
+      timeout: timeout,
+      color: color
+    });
+
+    if (!_this.isNotifying) {
+      _this.showNotify();
+    }
+  };
 }
-module.exports = exports["default"];
+/* Export notification functions */
+
+
+var notify = {
+  show: show,
+  hide: hide,
+  createShowQueue: createShowQueue
+};
+exports.notify = notify;
+var _default = _Container["default"];
+exports["default"] = _default;
 
 /***/ }),
 
-/***/ "./node_modules/react-modal/lib/index.js":
-/*!***********************************************!*\
-  !*** ./node_modules/react-modal/lib/index.js ***!
-  \***********************************************/
+/***/ "./node_modules/react-notify-toast/bin/stylesheet.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-notify-toast/bin/stylesheet.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28104,15 +26993,86 @@ module.exports = exports["default"];
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports["default"] = void 0;
 
-var _Modal = __webpack_require__(/*! ./components/Modal */ "./node_modules/react-modal/lib/components/Modal.js");
+var _defaults = __webpack_require__(/*! ./defaults */ "./node_modules/react-notify-toast/bin/defaults.js");
 
-var _Modal2 = _interopRequireDefault(_Modal);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-exports.default = _Modal2.default;
-module.exports = exports["default"];
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+/**
+ * This was created as an ES6 class with a getter for the styles to allow for recomputing
+ * dynamic values on each usage without calling a function.
+ */
+var Stylesheet =
+/*#__PURE__*/
+function () {
+  function Stylesheet() {
+    _classCallCheck(this, Stylesheet);
+  }
+
+  _createClass(Stylesheet, [{
+    key: "styles",
+    get: function get() {
+      return {
+        container: {
+          position: 'fixed',
+          width: '50%',
+          margin: '0 auto',
+          right: '0px',
+          top: _defaults.defaults.top,
+          left: '0px',
+          textAlign: 'center',
+          zIndex: _defaults.defaults.zIndex,
+          pointerEvents: 'none',
+          transition: 'all ' + _defaults.defaults.animationDuration + 'ms ease',
+          transform: 'translateY(-100%)',
+          // Vendor Prefixes
+          msTransition: 'all ' + _defaults.defaults.animationDuration + 'ms ease',
+          msTransform: 'translateY(-100%)',
+          WebkitTransition: 'all ' + _defaults.defaults.animationDuration + 'ms ease',
+          WebkitTransform: 'translateY(-100%)',
+          OTransition: 'all ' + _defaults.defaults.animationDuration + 'ms ease',
+          OTransform: 'translateY(-100%)',
+          MozTransition: 'all ' + _defaults.defaults.animationDuration + 'ms ease',
+          MozTransform: 'translateY(-100%)'
+        },
+        content: {
+          cursor: 'pointer',
+          display: 'inline-block',
+          width: 'auto',
+          borderRadius: '0 0 4px 4px',
+          backgroundColor: 'white',
+          padding: '10px 30px',
+          pointerEvents: 'all'
+        },
+        show: {
+          transform: 'translateY(0)',
+          msTransform: 'translateY(0)',
+          WebkitTransform: 'translateY(0)',
+          OTransform: 'translateY(0)',
+          MozTransform: 'translateY(0)'
+        },
+        hide: {
+          transform: 'translateY(-100%)',
+          msTransform: 'translateY(-100%)',
+          WebkitTransform: 'translateY(-100%)',
+          OTransform: 'translateY(-100%)',
+          MozTransform: 'translateY(-100%)'
+        }
+      };
+    }
+  }]);
+
+  return Stylesheet;
+}();
+
+var _default = new Stylesheet();
+
+exports["default"] = _default;
 
 /***/ }),
 
@@ -31831,80 +30791,6 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ "./node_modules/warning/warning.js":
-/*!*****************************************!*\
-  !*** ./node_modules/warning/warning.js ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2014-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-/**
- * Similar to invariant but only logs a warning if the condition is not met.
- * This can be used to log issues in development environments in critical
- * paths. Removing the logging code for production environments will keep the
- * same logic and follow the same code paths.
- */
-
-var __DEV__ = "development" !== 'production';
-
-var warning = function() {};
-
-if (__DEV__) {
-  var printWarning = function printWarning(format, args) {
-    var len = arguments.length;
-    args = new Array(len > 1 ? len - 1 : 0);
-    for (var key = 1; key < len; key++) {
-      args[key - 1] = arguments[key];
-    }
-    var argIndex = 0;
-    var message = 'Warning: ' +
-      format.replace(/%s/g, function() {
-        return args[argIndex++];
-      });
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  }
-
-  warning = function(condition, format, args) {
-    var len = arguments.length;
-    args = new Array(len > 2 ? len - 2 : 0);
-    for (var key = 2; key < len; key++) {
-      args[key - 2] = arguments[key];
-    }
-    if (format === undefined) {
-      throw new Error(
-          '`warning(condition, format, ...args)` requires a warning ' +
-          'message argument'
-      );
-    }
-    if (!condition) {
-      printWarning.apply(null, [format].concat(args));
-    }
-  };
-}
-
-module.exports = warning;
-
-
-/***/ }),
-
 /***/ "./src/components/AddProductsForm/AddProductsForm.css":
 /*!************************************************************!*\
   !*** ./src/components/AddProductsForm/AddProductsForm.css ***!
@@ -31994,12 +30880,11 @@ var AddProductsForm = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "addProductsForm"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductsFromSku_ProductsFromSku__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        loadFilesFromCsvUrl: this.props.config.loadFilesFromCsvUrl,
-        formKey: this.props.config.formKey
+        graphqlUrl: this.props.config.graphqlUrl
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductsFromCsv_ProductsFromCsv__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        loadFilesFromCsvUrl: this.props.config.loadFilesFromCsvUrl,
         readFileUrl: this.props.config.readFileUrl,
-        formKey: this.props.config.formKey
+        formKey: this.props.config.formKey,
+        graphqlUrl: this.props.config.graphqlUrl
       }));
     }
   }]);
@@ -32052,13 +30937,14 @@ if(false) {}
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _ProductsFromCsv_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProductsFromCsv.css */ "./src/components/AddProductsForm/ProductsFromCsv/ProductsFromCsv.css");
-/* harmony import */ var _ProductsFromCsv_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ProductsFromCsv_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _ProductStorage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../ProductStorage */ "./src/components/ProductStorage.js");
-/* harmony import */ var papaparse__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! papaparse */ "./node_modules/papaparse/papaparse.min.js");
-/* harmony import */ var papaparse__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(papaparse__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _Modal_Modal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Modal/Modal */ "./src/components/Modal/Modal.js");
-/* harmony import */ var _Grid_Grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Grid/Grid */ "./src/components/Grid/Grid.js");
+/* harmony import */ var papaparse__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! papaparse */ "./node_modules/papaparse/papaparse.min.js");
+/* harmony import */ var papaparse__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(papaparse__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Storage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Storage */ "./src/components/Storage.js");
+/* harmony import */ var _Loader_Loader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Loader/Loader */ "./src/components/Loader/Loader.js");
+/* harmony import */ var react_notify_toast__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-notify-toast */ "./node_modules/react-notify-toast/bin/notify.js");
+/* harmony import */ var react_notify_toast__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_notify_toast__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _ProductsFromCsv_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ProductsFromCsv.css */ "./src/components/AddProductsForm/ProductsFromCsv/ProductsFromCsv.css");
+/* harmony import */ var _ProductsFromCsv_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_ProductsFromCsv_css__WEBPACK_IMPORTED_MODULE_5__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -32102,61 +30988,16 @@ var ProductsFromCsv = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
 
-    _defineProperty(_assertThisInitialized(_this), "cancelAction", function () {
-      _this.handleCloseModal();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "acceptAction", function () {
-      _this.state.response.items.forEach(function (product) {
-        _ProductStorage__WEBPACK_IMPORTED_MODULE_2__["default"].addProduct(product);
-      });
-
-      _this.handleCloseModal();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleOpenModal", function (params) {
-      var tableData = [];
-
-      _this.setState({
-        response: params
-      });
-
-      Object.entries(params.errors).map(function (error, index) {
-        tableData.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
-          key: index + 1
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, index + 1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, error[0]), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-          className: "errorMessage"
-        }, error[1])));
-      });
-      var modalContent = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "modalTitle"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, params.total - Object.entries(params.errors).length, " out of ", Object.entries(params.errors).length, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "successfully passed validation"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Items below will not be added to the grid because:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Grid_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        tableHeaders: _this.tableHeaders,
-        tableData: tableData
-      }));
-
-      var buttons = _this.modalButtons.map(function (button) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-          className: button["class"],
-          onClick: button.action
-        }, button.text);
-      });
-
-      _this.setState({
-        showModal: true,
-        modalContent: modalContent,
-        tableData: tableData,
-        modalButtons: buttons
-      });
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleCloseModal", function () {
-      _this.setState({
-        showModal: false
-      });
-    });
-
     _defineProperty(_assertThisInitialized(_this), "importFromCsv", function () {
+      if (_this.state.uploadedFile === undefined) {
+        react_notify_toast__WEBPACK_IMPORTED_MODULE_4__["notify"].show("You should choose the file", 'error');
+        return;
+      }
+
+      _this.setState({
+        isLoading: true
+      });
+
       var formData = new FormData();
       formData.append("file", _this.state.uploadedFile);
       formData.append("form_key", _this.props.formKey);
@@ -32166,23 +31007,38 @@ var ProductsFromCsv = /*#__PURE__*/function (_React$Component) {
       }).then(function (response) {
         return response.json();
       }).then(function (response) {
-        papaparse__WEBPACK_IMPORTED_MODULE_3___default.a.parse(response.content, {
+        papaparse__WEBPACK_IMPORTED_MODULE_1___default.a.parse(response.content, {
           complete: function complete(result) {
-            formData.append("products", JSON.stringify(result.data));
-            formData.append("form_key", _this.props.formKey);
-            fetch(_this.props.loadFilesFromCsvUrl, {
+            var cartId = _Storage__WEBPACK_IMPORTED_MODULE_2__["default"].getItem("cartId");
+            var data = "\n                        mutation {\n                            addSimpleProductsToCart(\n                                input: {\n                                    cart_id: \"".concat(cartId, "\"\n                                    cart_items: [");
+            result.data.forEach(function (product) {
+              if (product[0] !== undefined && product[1] !== undefined) {
+                data += "\n                                {\n                                    data: {\n                                        quantity: ".concat(product[1], "\n                                        sku: \"").concat(product[0], "\"\n                                    }\n                                }");
+              }
+            });
+            data += " ]\n                        }\n                    ) {\n                        cart {\n                            items {\n                                id\n                                product {\n                                    name\n                                    sku\n                                }    \n                                quantity\n                            }\n                        }\n                    }\n                }";
+            fetch(_this.props.graphqlUrl, {
               method: "POST",
-              body: formData
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                query: data
+              })
             }).then(function (response) {
               return response.json();
             }).then(function (response) {
-              if (response.errors.length === 0 && response.items.length !== 0) {
-                response.items.forEach(function (product) {
-                  _ProductStorage__WEBPACK_IMPORTED_MODULE_2__["default"].addProduct(product);
+              if (response.errors !== undefined && response.errors.length !== 0) {
+                response.errors.forEach(function (error) {
+                  react_notify_toast__WEBPACK_IMPORTED_MODULE_4__["notify"].show(error.message, 'error');
                 });
-              } else {
-                _this.handleOpenModal(response);
               }
+
+              window.dispatchEvent(new Event('productsOperation'));
+
+              _this.setState({
+                isLoading: false
+              });
             });
           }
         });
@@ -32201,30 +31057,9 @@ var ProductsFromCsv = /*#__PURE__*/function (_React$Component) {
     _this.defaultInputText = "Choose file +";
     _this.state = {
       fileInputLabel: _this.defaultInputText,
-      uploadedFile: "",
-      showModal: false,
-      modalContent: "",
-      modalButtons: ""
+      uploadedFile: undefined,
+      isLoading: false
     };
-    _this.tableHeaders = [{
-      title: "Item №",
-      "class": "item-number-head"
-    }, {
-      title: "SKU",
-      "class": "sku-head"
-    }, {
-      title: "Reason",
-      "class": "action-head"
-    }];
-    _this.modalButtons = [{
-      text: 'Accept',
-      "class": 'btnOk',
-      action: _this.acceptAction
-    }, {
-      text: 'Cancel',
-      "class": 'btnCancel',
-      action: _this.cancelAction
-    }];
     return _this;
   }
 
@@ -32250,11 +31085,7 @@ var ProductsFromCsv = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "upload",
         onClick: this.importFromCsv
-      }, "Import"), this.state.showModal ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_Modal__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        content: this.state.modalContent,
-        buttons: this.state.modalButtons,
-        handleCloseModal: this.handleCloseModal
-      }) : null));
+      }, "Import"), this.state.isLoading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Loader_Loader__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_notify_toast__WEBPACK_IMPORTED_MODULE_4___default.a, null)));
     }
   }]);
 
@@ -32306,15 +31137,14 @@ if(false) {}
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-modal */ "./node_modules/react-modal/lib/index.js");
-/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_modal__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var papaparse__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! papaparse */ "./node_modules/papaparse/papaparse.min.js");
-/* harmony import */ var papaparse__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(papaparse__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Modal_Modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Modal/Modal */ "./src/components/Modal/Modal.js");
-/* harmony import */ var _ProductStorage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../ProductStorage */ "./src/components/ProductStorage.js");
+/* harmony import */ var papaparse__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! papaparse */ "./node_modules/papaparse/papaparse.min.js");
+/* harmony import */ var papaparse__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(papaparse__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Storage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Storage */ "./src/components/Storage.js");
+/* harmony import */ var _Loader_Loader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Loader/Loader */ "./src/components/Loader/Loader.js");
+/* harmony import */ var react_notify_toast__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-notify-toast */ "./node_modules/react-notify-toast/bin/notify.js");
+/* harmony import */ var react_notify_toast__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_notify_toast__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _ProductsFromSku_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ProductsFromSku.css */ "./src/components/AddProductsForm/ProductsFromSku/ProductsFromSku.css");
 /* harmony import */ var _ProductsFromSku_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_ProductsFromSku_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _Grid_Grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Grid/Grid */ "./src/components/Grid/Grid.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -32346,7 +31176,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-
 var ProductsFromSku = /*#__PURE__*/function (_React$Component) {
   _inherits(ProductsFromSku, _React$Component);
 
@@ -32359,79 +31188,46 @@ var ProductsFromSku = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
 
-    _defineProperty(_assertThisInitialized(_this), "cancelAction", function () {
-      _this.handleCloseModal();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "acceptAction", function () {
-      _this.state.response.items.forEach(function (product) {
-        _ProductStorage__WEBPACK_IMPORTED_MODULE_4__["default"].addProduct(product);
-      });
-
-      _this.handleCloseModal();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleOpenModal", function (params) {
-      var tableData = [];
-
-      _this.setState({
-        response: params
-      });
-
-      Object.entries(params.errors).map(function (error, index) {
-        tableData.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
-          key: index + 1
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, index + 1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, error[0]), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-          className: "errorMessage"
-        }, error[1])));
-      });
-      var modalContent = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "modalTitle"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, params.total - Object.entries(params.errors).length, " out of ", Object.entries(params.errors).length, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "successfully passed validation"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Items below will not be added to the grid because:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Grid_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        tableHeaders: _this.tableHeaders,
-        tableData: tableData
-      }));
-
-      var buttons = _this.modalButtons.map(function (button) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-          className: button["class"],
-          onClick: button.action
-        }, button.text);
-      });
-
-      _this.setState({
-        showModal: true,
-        modalContent: modalContent,
-        tableData: tableData,
-        modalButtons: buttons
-      });
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleCloseModal", function () {
-      _this.setState({
-        showModal: false
-      });
-    });
-
     _defineProperty(_assertThisInitialized(_this), "loadProducts", function () {
-      var formData = new FormData();
-      papaparse__WEBPACK_IMPORTED_MODULE_2___default.a.parse(_this.state.skuTextareaText, {
+      if (_this.state.skuTextareaText === "") {
+        react_notify_toast__WEBPACK_IMPORTED_MODULE_4__["notify"].show("You should input multiple SKUs", "error");
+        return;
+      }
+
+      _this.setState({
+        isLoading: true
+      });
+
+      papaparse__WEBPACK_IMPORTED_MODULE_1___default.a.parse(_this.state.skuTextareaText, {
         complete: function complete(result) {
-          formData.append("products", JSON.stringify(result.data));
-          formData.append("form_key", _this.props.formKey);
-          fetch(_this.props.loadFilesFromCsvUrl, {
+          var cartId = _Storage__WEBPACK_IMPORTED_MODULE_2__["default"].getItem("cartId");
+          var data = " \n                    mutation {\n                        addSimpleProductsToCart(\n                            input: {\n                                cart_id: \"".concat(cartId, "\"\n                                cart_items: [\n                                ");
+          result.data.forEach(function (product) {
+            data += "\n                        {\n                            data: {\n                                quantity: ".concat(product[1], "\n                                sku: \"").concat(product[0], "\"\n                            }\n                        }");
+          });
+          data += " ]\n                        }\n                    ) {\n                        cart {\n                            items {\n                                id\n                                product {\n                                    name\n                                    sku\n                                }    \n                                quantity\n                            }\n                        }\n                    }\n                }";
+          fetch(_this.props.graphqlUrl, {
             method: "POST",
-            body: formData
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              query: data
+            })
           }).then(function (response) {
             return response.json();
           }).then(function (response) {
-            if (response.errors.length === 0 && response.items.length !== 0) {
-              response.items.forEach(function (product) {
-                _ProductStorage__WEBPACK_IMPORTED_MODULE_4__["default"].addProduct(product);
+            if (response.errors !== undefined && response.errors.length !== 0) {
+              response.errors.forEach(function (error) {
+                react_notify_toast__WEBPACK_IMPORTED_MODULE_4__["notify"].show(error.message, 'error');
               });
-            } else {
-              _this.handleOpenModal(response);
             }
+
+            window.dispatchEvent(new Event('productsOperation'));
+
+            _this.setState({
+              isLoading: false
+            });
           });
         }
       });
@@ -32443,30 +31239,9 @@ var ProductsFromSku = /*#__PURE__*/function (_React$Component) {
       });
     });
 
-    _this.tableHeaders = [{
-      title: "Item №",
-      "class": "item-number-head"
-    }, {
-      title: "SKU",
-      "class": "sku-head"
-    }, {
-      title: "Reason",
-      "class": "action-head"
-    }];
-    _this.modalButtons = [{
-      text: 'Accept',
-      "class": 'btnOk',
-      action: _this.acceptAction
-    }, {
-      text: 'Cancel',
-      "class": 'btnCancel',
-      action: _this.cancelAction
-    }];
     _this.state = {
-      showModal: false,
-      skuTextareaText: "",
-      modalContent: "",
-      modalButtons: ""
+      isLoading: false,
+      skuTextareaText: ""
     };
     return _this;
   }
@@ -32495,11 +31270,7 @@ var ProductsFromSku = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "addToList",
         onClick: this.loadProducts
-      }, "Add to List"), this.state.showModal ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_Modal__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        content: this.state.modalContent,
-        buttons: this.state.modalButtons,
-        handleCloseModal: this.handleCloseModal
-      }) : null));
+      }, "Add to List"), this.state.isLoading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Loader_Loader__WEBPACK_IMPORTED_MODULE_3__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_notify_toast__WEBPACK_IMPORTED_MODULE_4___default.a, null));
     }
   }]);
 
@@ -32554,8 +31325,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Search_Search__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Search/Search */ "./src/components/Search/Search.js");
 /* harmony import */ var _Products_Products__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Products/Products */ "./src/components/Products/Products.js");
 /* harmony import */ var _AddProductsForm_AddProductsForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AddProductsForm/AddProductsForm */ "./src/components/AddProductsForm/AddProductsForm.js");
-/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./App.css */ "./src/components/App.css");
-/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _Storage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Storage */ "./src/components/Storage.js");
+/* harmony import */ var _Loader_Loader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Loader/Loader */ "./src/components/Loader/Loader.js");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./App.css */ "./src/components/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_6__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -32584,6 +31357,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
+
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
 
@@ -32596,11 +31371,27 @@ var App = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      data: document.global_data_for_react_app,
-      selected: false,
-      selectedItem: null,
-      count: 1
+      isLoading: false
     };
+
+    if (_Storage__WEBPACK_IMPORTED_MODULE_4__["default"].getItem("cartId") === null) {
+      _this.setState({
+        isLoading: true
+      });
+
+      fetch(_this.props.config.getCartIdUrl, {
+        method: "POST"
+      }).then(function (response) {
+        return response.json();
+      }).then(function (response) {
+        _Storage__WEBPACK_IMPORTED_MODULE_4__["default"].setItem("cartId", response.replace("\"", ""));
+
+        _this.setState({
+          isLoading: false
+        });
+      });
+    }
+
     return _this;
   }
 
@@ -32608,16 +31399,22 @@ var App = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        id: "react"
+        id: "orderForm",
+        className: "orderForm"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "pageTitle"
-      }, "Place a Quick Order"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Search_Search__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Order form"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Search_Search__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "productsManage"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Products_Products__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        currencySymbol: this.props.config.currencySymbol
+        currencySymbol: this.props.config.currencySymbol,
+        graphqlUrl: this.props.config.graphqlUrl,
+        addToCartUrl: this.props.config.getAddToCartUrl,
+        formKey: this.props.config.formKey,
+        getCartIdUrl: this.props.config.getCartIdUrl,
+        clearCartUrl: this.props.config.clearCartUrl
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AddProductsForm_AddProductsForm__WEBPACK_IMPORTED_MODULE_3__["default"], {
         config: this.props.config
-      })));
+      })), this.state.isLoading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Loader_Loader__WEBPACK_IMPORTED_MODULE_5__["default"], null));
     }
   }]);
 
@@ -32712,11 +31509,20 @@ var Grid = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "productGridWrapper"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, this.props.tableHeaders.map(function (thead) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-          className: thead["class"]
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "table"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "thead"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "tr"
+      }, this.props.tableHeaders.map(function (thead, key) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "th " + thead["class"],
+          key: key
         }, thead.title);
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.props.tableData)));
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "tbody"
+      }, this.props.tableData)));
     }
   }]);
 
@@ -32727,15 +31533,15 @@ var Grid = /*#__PURE__*/function (_React$Component) {
 
 /***/ }),
 
-/***/ "./src/components/Modal/Modal.css":
-/*!****************************************!*\
-  !*** ./src/components/Modal/Modal.css ***!
-  \****************************************/
+/***/ "./src/components/Loader/Loader.css":
+/*!******************************************!*\
+  !*** ./src/components/Loader/Loader.css ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./Modal.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/Modal/Modal.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./Loader.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/Loader/Loader.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -32757,10 +31563,10 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./src/components/Modal/Modal.js":
-/*!***************************************!*\
-  !*** ./src/components/Modal/Modal.js ***!
-  \***************************************/
+/***/ "./src/components/Loader/Loader.js":
+/*!*****************************************!*\
+  !*** ./src/components/Loader/Loader.js ***!
+  \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -32768,8 +31574,8 @@ if(false) {}
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Modal_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Modal.css */ "./src/components/Modal/Modal.css");
-/* harmony import */ var _Modal_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Modal_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Loader_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Loader.css */ "./src/components/Loader/Loader.css");
+/* harmony import */ var _Loader_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Loader_css__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -32795,175 +31601,36 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-var Modal = /*#__PURE__*/function (_React$Component) {
-  _inherits(Modal, _React$Component);
+var Loader = /*#__PURE__*/function (_React$Component) {
+  _inherits(Loader, _React$Component);
 
-  var _super = _createSuper(Modal);
+  var _super = _createSuper(Loader);
 
-  function Modal(props) {
-    _classCallCheck(this, Modal);
+  function Loader(props) {
+    _classCallCheck(this, Loader);
 
     return _super.call(this, props);
   }
 
-  _createClass(Modal, [{
+  _createClass(Loader, [{
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "modalWindow"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "modalContent"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "close",
-        onClick: this.props.handleCloseModal
-      }, "\xD7"), this.props.content !== undefined ? this.props.content : "", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "actions"
-      }, this.props.buttons !== undefined ? this.props.buttons : "")));
+        className: "loader"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+        className: "loaderImage"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("circle", {
+        cx: "70",
+        cy: "70",
+        r: "70"
+      })));
     }
   }]);
 
-  return Modal;
+  return Loader;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Modal);
-
-/***/ }),
-
-/***/ "./src/components/ProductStorage.js":
-/*!******************************************!*\
-  !*** ./src/components/ProductStorage.js ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Storage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Storage */ "./src/components/Storage.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-
-var PRODUCTS = "products";
-
-var ProductStorage = /*#__PURE__*/function (_Storage) {
-  _inherits(ProductStorage, _Storage);
-
-  var _super = _createSuper(ProductStorage);
-
-  function ProductStorage() {
-    _classCallCheck(this, ProductStorage);
-
-    return _super.apply(this, arguments);
-  }
-
-  _createClass(ProductStorage, null, [{
-    key: "PRODUCTS",
-    get: function get() {
-      return PRODUCTS;
-    }
-  }, {
-    key: "saveProducts",
-    value: function saveProducts(products) {
-      this.setItem(this.PRODUCTS, products);
-    }
-  }, {
-    key: "getProducts",
-    value: function getProducts() {
-      var products = this.getItem(this.PRODUCTS);
-
-      if (products === "") {
-        products = [];
-      }
-
-      return products;
-    }
-  }, {
-    key: "getProduct",
-    value: function getProduct(id) {
-      var products = this.getProducts();
-      var foundProduct;
-
-      if (products.length !== 0) {
-        foundProduct = products.find(function (product) {
-          if (product.id === id) {
-            return product;
-          }
-        });
-
-        if (foundProduct !== undefined) {
-          return foundProduct;
-        } else {
-          return 0;
-        }
-      }
-    }
-  }, {
-    key: "addProduct",
-    value: function addProduct(product) {
-      var products = this.getProducts();
-      var productId = 1;
-
-      if (products.length !== 0) {
-        productId = Math.max.apply(Math, products.map(function (product) {
-          return product.id;
-        }));
-        productId++;
-      } else {
-        products = [];
-      }
-
-      product.id = productId;
-      products.push(product);
-      this.setItem(this.PRODUCTS, products);
-    }
-  }, {
-    key: "deleteProduct",
-    value: function deleteProduct(id) {
-      var products = this.getProducts();
-      products = products.filter(function (product) {
-        return product.id !== id;
-      });
-      this.saveProducts(products);
-    }
-  }, {
-    key: "replaceProduct",
-    value: function replaceProduct(id, newProduct) {
-      var products = this.getProducts();
-      products = products.map(function (product) {
-        if (product.id === id) {
-          newProduct.id = id;
-          return newProduct;
-        }
-
-        return product;
-      });
-      this.saveProducts(products);
-    }
-  }]);
-
-  return ProductStorage;
-}(_Storage__WEBPACK_IMPORTED_MODULE_0__["default"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (ProductStorage);
+/* harmony default export */ __webpack_exports__["default"] = (Loader);
 
 /***/ }),
 
@@ -33008,8 +31675,12 @@ if(false) {}
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _ProductActions_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProductActions.css */ "./src/components/Products/ProductActions/ProductActions.css");
-/* harmony import */ var _ProductActions_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ProductActions_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Storage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Storage */ "./src/components/Storage.js");
+/* harmony import */ var react_notify_toast__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-notify-toast */ "./node_modules/react-notify-toast/bin/notify.js");
+/* harmony import */ var react_notify_toast__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_notify_toast__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Loader_Loader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Loader/Loader */ "./src/components/Loader/Loader.js");
+/* harmony import */ var _ProductActions_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ProductActions.css */ "./src/components/Products/ProductActions/ProductActions.css");
+/* harmony import */ var _ProductActions_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_ProductActions_css__WEBPACK_IMPORTED_MODULE_4__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -33032,6 +31703,11 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
 
 
 
@@ -33041,9 +31717,57 @@ var ProductActions = /*#__PURE__*/function (_React$Component) {
   var _super = _createSuper(ProductActions);
 
   function ProductActions(props) {
+    var _this;
+
     _classCallCheck(this, ProductActions);
 
-    return _super.call(this, props);
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "addToCart", function () {
+      var formData = new FormData();
+      var maskedCartId = _Storage__WEBPACK_IMPORTED_MODULE_1__["default"].getItem("cartId");
+      var getCartIdUrl = _this.props.getCartIdUrl + maskedCartId.replaceAll("\"", "");
+      formData.append("form_key", _this.props.formKey);
+
+      _this.setState({
+        isLoading: true
+      });
+
+      fetch(getCartIdUrl, {
+        method: "GET"
+      }).then(function (response) {
+        return response.json();
+      }).then(function (response) {
+        if (response.errors !== undefined && response.errors.length !== 0) {
+          response.errors.forEach(function (error) {
+            react_notify_toast__WEBPACK_IMPORTED_MODULE_2__["notify"].show(error.message, 'error');
+          });
+        } else {
+          var cartId = response.id;
+          formData.append("cartId", cartId);
+          formData.append("maskedCartId", cartId);
+          fetch(_this.props.addToCartUrl, {
+            method: "POST",
+            body: formData
+          }).then(function (response) {
+            if (response.redirected) {
+              window.location.href = response.url;
+            }
+
+            _this.setState({
+              isLoading: false
+            });
+
+            localStorage.removeItem("cartId");
+          });
+        }
+      });
+    });
+
+    _this.state = {
+      isLoading: false
+    };
+    return _this;
   }
 
   _createClass(ProductActions, [{
@@ -33052,10 +31776,9 @@ var ProductActions = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "productActions"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "AddToQuote"
-      }, "Add to quote"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "AddToCart"
-      }, "Add to cart"));
+        className: "AddToCart",
+        onClick: this.addToCart
+      }, "Add to cart"), this.state.isLoading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Loader_Loader__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_notify_toast__WEBPACK_IMPORTED_MODULE_2___default.a, null));
     }
   }]);
 
@@ -33109,10 +31832,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ProductActions_ProductActions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProductActions/ProductActions */ "./src/components/Products/ProductActions/ProductActions.js");
 /* harmony import */ var _Grid_Grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Grid/Grid */ "./src/components/Grid/Grid.js");
-/* harmony import */ var _ProductStorage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ProductStorage */ "./src/components/ProductStorage.js");
-/* harmony import */ var _Totals_Totals__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Totals/Totals */ "./src/components/Totals/Totals.js");
-/* harmony import */ var _Products_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Products.css */ "./src/components/Products/Products.css");
-/* harmony import */ var _Products_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_Products_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _Totals_Totals__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Totals/Totals */ "./src/components/Totals/Totals.js");
+/* harmony import */ var _Loader_Loader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Loader/Loader */ "./src/components/Loader/Loader.js");
+/* harmony import */ var _Storage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Storage */ "./src/components/Storage.js");
+/* harmony import */ var react_notify_toast__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-notify-toast */ "./node_modules/react-notify-toast/bin/notify.js");
+/* harmony import */ var react_notify_toast__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_notify_toast__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _Products_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Products.css */ "./src/components/Products/Products.css");
+/* harmony import */ var _Products_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_Products_css__WEBPACK_IMPORTED_MODULE_7__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -33144,6 +31870,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
+
 var Products = /*#__PURE__*/function (_React$Component) {
   _inherits(Products, _React$Component);
 
@@ -33157,30 +31885,80 @@ var Products = /*#__PURE__*/function (_React$Component) {
     _this = _super.call(this, props);
 
     _defineProperty(_assertThisInitialized(_this), "processData", function () {
-      var products = _ProductStorage__WEBPACK_IMPORTED_MODULE_3__["default"].getProducts();
-      var totalPrice = 0;
-      products.forEach(function (product) {
-        totalPrice += +product.price * +product.quantity;
-      });
+      var cartId = _Storage__WEBPACK_IMPORTED_MODULE_5__["default"].getItem("cartId");
+      var data = "\n        {\n            cart(cart_id: \"".concat(cartId, "\") {\n                items {\n                    id\n                    product {\n                        name\n                        sku\n                    }\n                quantity\n                }\n                \n                prices {\n                    grand_total {\n                        value\n                        currency\n                    }\n                }\n            }\n        }");
 
-      _this.setState({
-        products: products,
-        totalPrice: totalPrice
-      }, function () {
-        _this.renderTableData();
+      if (!_this.state.qtyUpdateRunning) {
+        _this.setState({
+          isLoading: true
+        });
+      }
+
+      fetch(_this.props.graphqlUrl, {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          query: data
+        })
+      }).then(function (response) {
+        return response.json();
+      }).then(function (response) {
+        if (response.errors === undefined) {
+          var products = response.data.cart.items;
+          var totalPrice = response.data.cart.prices.grand_total.value;
+          var qtyUpdateRunning = _this.state.qtyUpdateRunning ? false : _this.state.qtyUpdateRunning;
+
+          _this.setState({
+            products: products,
+            totalPrice: totalPrice,
+            qtyUpdateRunning: qtyUpdateRunning
+          }, function () {
+            _this.renderTableData();
+
+            _this.setState({
+              isLoading: false
+            });
+          });
+        }
+
+        _this.setState({
+          isLoading: false
+        });
       });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "closeProductError", function (e) {
+      e.preventDefault();
+      var sku = e.target.dataset.sku;
+      var errors = _this.state.errors;
+
+      if (_this.state.errors[sku] !== undefined) {
+        delete errors[sku];
+
+        _this.setState({
+          errors: errors
+        });
+
+        window.dispatchEvent(new Event('quantityUpdateError'));
+      }
     });
 
     _defineProperty(_assertThisInitialized(_this), "renderTableData", function () {
       var tableData;
-      console.log("Table data render");
 
       if (_this.state.products.length !== 0) {
         tableData = _this.state.products.map(function (product) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
-            "data-id": product.id,
-            "data-product-id": product.product_id
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, product.SKU), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tr",
+            "data-product-id": product.id,
+            key: product.id
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "td"
+          }, product.product.sku), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "td"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
             className: "qty minus",
             onClick: _this.updateProductQty
           }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -33192,10 +31970,19 @@ var Products = /*#__PURE__*/function (_React$Component) {
           }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
             className: "qty plus",
             onClick: _this.updateProductQty
-          })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "td"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
             onClick: _this.deleteProduct,
             className: "productDelete"
-          }, "Delete")));
+          }, "Delete")), _this.state.errors[product.product.sku] !== undefined && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "productError"
+          }, _this.state.errors[product.product.sku], /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "#",
+            className: "close",
+            "data-sku": product.product.sku,
+            onClick: _this.closeProductError
+          }, "\xD7")));
         });
       }
 
@@ -33205,31 +31992,162 @@ var Products = /*#__PURE__*/function (_React$Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "deleteProduct", function (e) {
-      var id = +e.target.closest("tr").dataset.id;
-      _ProductStorage__WEBPACK_IMPORTED_MODULE_3__["default"].deleteProduct(id);
+      var id = +e.target.closest(".tr").dataset.productId;
+      var cartId = _Storage__WEBPACK_IMPORTED_MODULE_5__["default"].getItem("cartId");
+
+      if (_this.state.products !== undefined && _this.state.products.length === 1) {
+        var formData = new FormData();
+        var getCartIdUrl = _this.props.getCartIdUrl + cartId;
+        formData.append("form_key", _this.props.formKey);
+
+        _this.setState({
+          isLoading: true
+        });
+
+        fetch(getCartIdUrl, {
+          method: "GET"
+        }).then(function (response) {
+          return response.json();
+        }).then(function (response) {
+          if (response.errors !== undefined && response.errors.length !== 0) {
+            response.errors.forEach(function (error) {
+              _this.show(error.message, 'error');
+            });
+          } else {
+            var _cartId = response.id;
+            formData.append("cartId", _cartId);
+            fetch(_this.props.clearCartUrl, {
+              method: "POST",
+              body: formData
+            }).then(function (response) {
+              _this.setState({
+                isLoading: false,
+                products: []
+              });
+
+              window.dispatchEvent(new Event('productsOperation'));
+            });
+          }
+        });
+      } else {
+        var data = "\n        mutation {\n            removeItemFromCart(\n                input: {\n                  cart_id: \"".concat(cartId, "\",\n                  cart_item_id: ").concat(id, "\n                }\n            )\n        {\n            cart {\n                items {\n                    id\n                    product {\n                        name\n                    }\n                    quantity\n                }\n                prices {\n                    grand_total {\n                        value\n                        currency\n                    }\n                }\n            }\n        }}");
+
+        _this.setState({
+          isLoading: true
+        });
+
+        fetch(_this.props.graphqlUrl, {
+          method: "POST",
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            query: data
+          })
+        }).then(function (response) {
+          return response.json();
+        }).then(function (response) {
+          if (response.errors !== undefined && response.errors.length !== 0) {
+            response.errors.forEach(function (error) {
+              _this.show(error.message, 'error');
+            });
+          }
+
+          window.dispatchEvent(new Event('productsOperation'));
+        });
+      }
     });
 
     _defineProperty(_assertThisInitialized(_this), "updateProductQty", function (e) {
-      var id = +e.target.closest("tr").dataset.id;
-      var product = _ProductStorage__WEBPACK_IMPORTED_MODULE_3__["default"].getProduct(id);
+      var cartId = _Storage__WEBPACK_IMPORTED_MODULE_5__["default"].getItem("cartId");
+      var tr = e.target.closest(".tr");
+      var productId = +tr.dataset.productId;
+      var qty = tr.getElementsByTagName('input')[0].value;
 
       if (e.target.classList.contains("minus")) {
-        if (product.quantity > 1) {
-          product.quantity = +product.quantity - 1;
+        if (qty > 1) {
+          qty = +qty - 1;
         }
       } else if (e.target.classList.contains("plus")) {
-        product.quantity = +product.quantity + 1;
+        qty = +qty + 1;
       } else {
-        product.quantity = e.target.value;
+        if (e.target.value === "") {
+          qty = 1;
+        } else {
+          qty = e.target.value;
+        }
       }
 
-      _ProductStorage__WEBPACK_IMPORTED_MODULE_3__["default"].replaceProduct(id, product);
+      var products = _this.state.products.map(function (product) {
+        if (+product.id === productId) {
+          product.quantity = qty;
+        }
+
+        return product;
+      });
+
+      _this.setState({
+        products: products
+      }, function () {
+        _this.renderTableData();
+      });
+
+      if (_this.state.timer !== undefined) {
+        clearInterval(_this.state.timer);
+      }
+
+      _this.setState({
+        qtyUpdateRunning: true,
+        timer: setTimeout(function () {
+          _this.updateProductQtyQuery(cartId, productId, qty);
+        }, 500)
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "updateProductQtyQuery", function (cartId, productId, qty) {
+      var data = "\n            mutation {\n                updateCartItems(\n                    input: {\n                        cart_id: \"".concat(cartId, "\",\n                        cart_items: [\n                            {\n                                cart_item_id: ").concat(productId, "\n                                quantity: ").concat(qty, "\n                            }\n                        ]\n                    }\n                )\n            {\n                cart {\n                    items {\n                        id\n                    }\n                }\n            }}");
+      fetch(_this.props.graphqlUrl, {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          query: data
+        })
+      }).then(function (response) {
+        return response.json();
+      }).then(function (response) {
+        if (response.errors !== undefined && response.errors.length !== 0) {
+          response.errors.forEach(function (error) {
+            var sku = error.message.match("(?<=SKU ).+?(?=:)");
+
+            _this.showQtyError(sku, error.message);
+          });
+        }
+
+        window.dispatchEvent(new Event('productsOperation'));
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "showQtyError", function (sku, errorMessage) {
+      var errors = _this.state.errors;
+      errors[sku] = errorMessage;
+
+      _this.setState({
+        errors: errors
+      }, function () {
+        window.dispatchEvent(new Event('quantityUpdateError'));
+      });
     });
 
     _this.state = {
       products: [],
       tableData: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null),
-      totalPrice: 0
+      totalPrice: 0,
+      isLoading: false,
+      qtyUpdateRunning: false,
+      timer: undefined,
+      errors: []
     };
     _this.tableHeaders = [{
       title: "Item",
@@ -33241,17 +32159,22 @@ var Products = /*#__PURE__*/function (_React$Component) {
       title: "Action",
       "class": "action-head"
     }];
-    window.addEventListener('storage', function () {
+    window.addEventListener('productsOperation', function () {
       _this.processData();
     });
+    window.addEventListener('quantityUpdateError', function () {
+      _this.renderTableData();
+    });
+    _this.show = react_notify_toast__WEBPACK_IMPORTED_MODULE_6__["notify"].createShowQueue();
     return _this;
   }
 
   _createClass(Products, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.processData();
-      this.renderTableData();
+      if (_Storage__WEBPACK_IMPORTED_MODULE_5__["default"].getItem("cartId") !== null) {
+        this.processData();
+      }
     }
   }, {
     key: "render",
@@ -33264,7 +32187,7 @@ var Products = /*#__PURE__*/function (_React$Component) {
           tableHeaders: this.tableHeaders,
           tableData: this.state.tableData
         });
-        totals = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Totals_Totals__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        totals = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Totals_Totals__WEBPACK_IMPORTED_MODULE_3__["default"], {
           currencySymbol: this.props.currencySymbol,
           totalPrice: this.state.totalPrice
         });
@@ -33278,7 +32201,11 @@ var Products = /*#__PURE__*/function (_React$Component) {
         className: "productListWrapper"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "productList"
-      }, productsElement, totals), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductActions_ProductActions__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+      }, productsElement, totals), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductActions_ProductActions__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        addToCartUrl: this.props.addToCartUrl,
+        getCartIdUrl: this.props.getCartIdUrl,
+        formKey: this.props.formKey
+      }), this.state.isLoading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Loader_Loader__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_notify_toast__WEBPACK_IMPORTED_MODULE_6___default.a, null));
     }
   }]);
 
@@ -33354,6 +32281,8 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -33363,9 +32292,18 @@ var Search = /*#__PURE__*/function (_React$Component) {
   var _super = _createSuper(Search);
 
   function Search(props) {
+    var _this;
+
     _classCallCheck(this, Search);
 
-    return _super.call(this, props);
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "searchProducts", function (e) {});
+
+    _this.state = {
+      searchCompleted: true
+    };
+    return _this;
   }
 
   _createClass(Search, [{
@@ -33376,8 +32314,17 @@ var Search = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "search",
         className: "productSearchInput",
+        onChange: this.searchProducts,
         placeholder: "Search by SKU or Product Name"
-      }));
+      }), this.state.searchCompleted && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "search-results"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "product"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "sku"
+      }, "SKU"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "price"
+      }, "Price"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Add"))));
     }
   }]);
 
@@ -33412,7 +32359,7 @@ var Storage = /*#__PURE__*/function () {
     key: "setItem",
     value: function setItem(key, value) {
       localStorage.setItem(key, JSON.stringify(value));
-      window.dispatchEvent(new Event('storage'));
+      window.dispatchEvent(new Event('productsOperation'));
     }
   }, {
     key: "getItem",
@@ -33437,6 +32384,36 @@ var Storage = /*#__PURE__*/function () {
 
 /***/ }),
 
+/***/ "./src/components/Totals/Totals.css":
+/*!******************************************!*\
+  !*** ./src/components/Totals/Totals.css ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./Totals.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/Totals/Totals.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./src/components/Totals/Totals.js":
 /*!*****************************************!*\
   !*** ./src/components/Totals/Totals.js ***!
@@ -33448,6 +32425,8 @@ var Storage = /*#__PURE__*/function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Totals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Totals.css */ "./src/components/Totals/Totals.css");
+/* harmony import */ var _Totals_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Totals_css__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -33469,6 +32448,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
 
 
 

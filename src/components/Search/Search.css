@@ -4,4 +4,10 @@
 
 .productSearch > .productSearchInput:focus {
   border: 1px solid rgb(51 153 255);
+  box-shadow: none;
+  background-color: white;
+}
+
+.productSearch > .productSearchInput {
+  padding: 1.4%;
 }

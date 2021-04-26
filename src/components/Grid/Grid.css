@@ -9,53 +9,31 @@
   text-size-adjust: 100%;
 }
 
-.productGridWrapper thead {
+.productGridWrapper .thead {
   border-bottom: 1px solid #e5e5e6;
-}
-
-.qty {
-  background-color: transparent;
-  color: black !important;
-  transition: .5s all;
-  display: inline-grid;
-  align-items: center;
-}
-
-.qty::before {
-  font-size: 24px;
-  line-height: 0;
-}
-
-.minus::before {
-  content: '-';
-}
-
-.plus::before {
-  content: '+';
-}
-
-.minus+input {
-  width: 60px;
-  height: 36px;
-}
-
-.qty:hover {
-  background-color: transparent;
-}
-
-.qty:hover:before {
-  color: #4776f0;
 }
 
 .productGridWrapper > table > tbody > tr > td {
   vertical-align: initial;
 }
 
-.qty:focus {
-  padding: 0 20px;
-  height: 44px;
-  line-height: 19.92px;
-  background-color: transparent;
-  color: #4776f0 !important;
-  display: inline-grid;
+.productGridWrapper thead > tr > th:first-child, .productGridWrapper tbody > tr > td:first-child {
+  padding-left: 4%;
+}
+
+.productGridWrapper .thead > .tr  {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  padding: 35px 15px 20px;
+}
+
+.productGridWrapper .tbody > .tr {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.productGridWrapper .tbody {
+  padding: 15px;
 }
