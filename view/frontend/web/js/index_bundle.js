@@ -140,7 +140,7 @@ exports.push([module.i, ".multipleProducts > h1 {\n  color: #333;\n  font-family
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".orderForm .productsManage {\n  display: flex;\n  flex-direction: row;\n}\n\n.orderForm .pageTitle {\n  margin-bottom: 1.5%;\n}\n\n.orderForm button:not(.qty) {\n  box-shadow: none;\n  border-radius: 3px;\n  font-weight: 400;\n  transition: .2s all;\n  font-size: 1.5rem;\n  background-color: white;\n  color: #4776f0d1;\n  height: 38px;\n}\n\n.orderForm button:not(.qty):hover {\n  background-color: #4776f0;\n  color: white;\n  border-color: #4776f0;\n}", ""]);
+exports.push([module.i, ".orderForm .productsManage {\n  display: flex;\n  flex-direction: row;\n}\n\n.orderForm .pageTitle {\n  margin-bottom: 1.5%;\n}\n\n.orderForm button:not(.qty) {\n  box-shadow: none;\n  border-radius: 3px;\n  font-weight: 400;\n  transition: .2s all;\n  font-size: 1.5rem;\n  background-color: white;\n  color: #4776f0d1 !important;\n  height: 38px;\n  border: 1px solid #c2c2c2 !important;\n  display: flex;\n  align-items: center;\n}\n\n.orderForm button:not(.qty):hover {\n  background-color: #4776f0;\n  color: white !important;\n  border-color: #4776f0 !important;\n}", ""]);
 
 
 
